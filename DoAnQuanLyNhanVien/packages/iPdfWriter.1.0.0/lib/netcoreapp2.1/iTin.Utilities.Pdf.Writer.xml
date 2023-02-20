@@ -1,0 +1,3016 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iTin.Utilities.Pdf.Writer</name>
+    </assembly>
+    <members>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.IPdfObjectConfig">
+            <summary>
+            Represents configuration information for an object <see cref="T:iTin.Utilities.Pdf.Writer.PdfObject"/>.
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig">
+            <inheritdoc/>
+            <summary>
+            Represents configuration information for an object <see cref="T:iTin.Utilities.Pdf.Writer.PdfObject"/>.
+            </summary>
+            <seealso cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IPdfObjectConfig"/>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig.Default">
+            <summary>
+            Defaults configuration. Defaults no zipped output.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig.ZippedResult">
+            <summary>
+            Zipped output configuration. This output has been zipped.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig.Filename">
+            <summary>
+            Gets or sets a value thats represents filename if is marked as zipped
+            </summary>
+            <value>
+            <b>true</b> if compression is allowed; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig.Zipped">
+            <summary>
+            Gets or sets a value indicating whether compression is allowed.
+            </summary>
+            <value>
+            <b>true</b> if compression is allowed; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.IInput">
+            <summary>
+            Defines a generic input
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.AutoUpdateChanges">
+            <summary>
+            Gets or sets a value indicating whether automatic updates for changes.
+            </summary>
+            <value>
+            <b>true</b> if automatic update changes; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.DeletePhysicalFilesAfterMerge">
+            <summary>
+            Gets or sets a value indicating whether delete physical files after merge.
+            </summary>
+            <value>
+            <b>true</b> if delete physical files after merge; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.Index">
+            <summary>
+            Gets or sets a value that contains input index.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that contains input index.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.Input">
+            <summary>
+            Gets or sets the input object.
+            </summary>
+            <value>
+            The input.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.InputType">
+            <summary>
+            Gets input type.
+            </summary>
+            <value>
+            An value of enumeration <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType"/> indicating type of the input.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.CreateResult(iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig)">
+            <summary>
+            Returns a new reference <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> that complies with what is indicated in its configuration object. By default, an <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IInput"/> will not be zipped.
+            </summary>
+            <param name="config">The output result configuration.</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.Insert(iTin.Utilities.Pdf.Writer.ComponentModel.IInsert)">
+            <summary>
+            Try to insert an element in a input.
+            </summary>
+            <param name="data">Reference to insertable object information</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.Replace(iTin.Utilities.Pdf.Writer.ComponentModel.IReplace)">
+            <summary>
+            Try to replace an element in a input.
+            </summary>
+            <param name="data">Reference to replacement object information</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.SaveToFile(System.String,iTin.Core.ComponentModel.SaveOptions)">
+            <summary>
+            Saves this input into a file.
+            </summary>
+            <param name="outputPath">The output path. The use of the <b>~</b> character is allowed to indicate relative paths, and you can also use <b>UNC</b> path.</param>
+            <param name="options">Save options</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Core.ComponentModel.Results.BooleanResult"/> which implements the <see cref="T:iTin.Core.ComponentModel.IResult"/> interface reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:System.Boolean"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInput.ToStream">
+            <summary>
+            Convert this input into a stream object.
+            </summary>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> that represents a input file.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType">
+            <summary>
+            Specifies the known input type.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType.Filename">
+            <summary>
+            Input file type as path
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType.Stream">
+            <summary>
+            Input file type as stream
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType.ByteArray">
+            <summary>
+            Input file type as byte array sequence
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType.PdfInput">
+            <summary>
+            Input file type as <see cref="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType.PdfInput"/>
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType.NotSupported">
+            <summary>
+            Input file type not supported
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.KnownOutputType">
+            <summary>
+            Specifies the known output type.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownOutputType.Pdf">
+            <summary>
+            Output file type as pdf
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.KnownOutputType.Zip">
+            <summary>
+            Output file type as zip
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.IOutputAction">
+            <summary>
+            Defines allowed actions for output result.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.IOutputAction.Execute(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData)">
+            <summary>
+            Execute action for specified output result.
+            </summary>
+            <param name="data">Target output result data.</param>
+            <returns>
+            A <see cref="T:iTin.Core.ComponentModel.IResult"/> reference that contains action result.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.Save.SaveToFile">
+            <inheritdoc/>
+            <summary>
+            Defines allowed actions for output result data
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.Save.SaveToFile.Execute(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData)">
+            <inheritdoc />
+            <summary>
+            Execute action for specified output result data.
+            </summary>
+            <param name="data">Target output result data.</param>
+            <returns>
+            <para>
+            An instance which implements the <see cref="T:iTin.Core.ComponentModel.IResult"/> interface that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.Save.SaveToFile.OutputPath">
+            <summary>
+            Gets or sets the output path. The use of the <b>~</b> character is allowed to indicate relative paths, and you can also use <b>UNC</b> path.
+            </summary>
+            <value>
+            The output path.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.Save.SaveToFile.SaveOptions">
+            <summary>
+            Defines file save options. Allows defining if the directory is created automatically if it does not exist.
+            </summary>
+            <value>
+            Save options reference.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult">
+            <summary>
+            Specialization of <see cref="T:iTin.Core.ComponentModel.ResultBase`1"/> interface.<br/>
+            Represents result after insert an element in <b>pdf</b> document.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.CreateErroResult(System.String,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed error.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[])">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.CreateErroResult(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="value">Response value</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[],iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.CreateSuccessResult(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData)">
+            <summary>
+            Returns a new success result.
+            </summary>
+            <param name="value">Response value</param>
+            <returns>
+            A new valid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.FromException(System.Exception)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.FromException(System.Exception,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.Insert(iTin.Utilities.Pdf.Writer.ComponentModel.IInsert,System.Boolean)">
+            <summary>
+            Try to insert an element in this input.
+            </summary>
+            <param name="data">Reference to insertable object information</param>
+            <param name="canInsert">Determines if can insert. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.Replace(iTin.Utilities.Pdf.Writer.ComponentModel.IReplace,System.Boolean)">
+            <summary>
+            Try to replace an element in this input.
+            </summary>
+            <param name="data">Reference to replaceable object information</param>
+            <param name="canReplace">Determines if can replace. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult.Set(iTin.Utilities.Pdf.Writer.ComponentModel.ISet,System.Boolean)">
+            <summary>
+            Try to set an element in this input.
+            </summary>
+            <param name="data">Reference to insertable object information</param>
+            <param name="canSet">Determines if can set. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData">
+            <summary>
+            Represents insert data for an object <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/>.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData.Context">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData.InputStream">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData.OutputStream">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData">
+            <summary>
+            Represents configuration information for an object <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.IsZipped">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.OutputType">
+            <summary>
+            Gets a value indicating type of output file.
+            </summary>
+            <value>
+            One of the values of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.KnownOutputType"/> enumeration.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.Configuration">
+            <summary>
+            Gets or sets the pdf configuration settings to apply.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.OutputStream">
+            <summary>
+            Gets a value that contains a reference to the output stream.
+            </summary>
+            <value>
+            A <see cref="T:System.IO.Stream"/> that contains a reference to the output stream.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.UncompressOutputStream">
+            <summary>
+            Gets a value that contains a reference to the uncompressed output stream. If <see cref="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.OutputType"/> is <b>Pdf</b> this value is equals to <see cref="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.OutputStream"/> value property.
+            </summary>
+            <value>
+            A <see cref="T:System.IO.Stream"/> that contains a reference to the uncompressed output stream.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.Zipped">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.Action(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Action.IOutputAction)">
+            <summary>
+            Executes specified action for this output result instance.
+            </summary>
+            <param name="output">Target output result.</param>
+            <returns>
+            <para>
+            An instance which implements the <see cref="T:iTin.Core.ComponentModel.IResult"/> interface that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.GetOutputStream">
+            <summary>
+            Returns a reference to the output stream.
+            </summary>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> that contains a reference to the output stream.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.GetUnCompressedOutputStream">
+            <summary>
+            Returns a reference to the uncompressed output stream. If <see cref="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.OutputType"/> is <b>Pdf</b> this value is equals to <see cref="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.OutputStream"/> value property.
+            </summary>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> that contains the original outupt uncrompressed.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData.ToString">
+            <inheritdoc/>
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult">
+            <summary>
+            Specialization of <see cref="T:iTin.Core.ComponentModel.ResultBase`1"/> interface.<br/>
+            Represents configuration information for an object <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.CreateErroResult(System.String,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed error.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[])">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.CreateErroResult(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="value">Response value</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[],iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.CreateSuccessResult(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData)">
+            <summary>
+            Returns a new success result.
+            </summary>
+            <param name="value">Response value</param>
+            <returns>
+            A new valid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.FromException(System.Exception)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult.FromException(System.Exception,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult">
+            <summary>
+            Specialization of <see cref="T:iTin.Core.ComponentModel.ResultBase`1"/> interface.<br/>
+            Represents result after insert an element in <b>pdf</b> document.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.CreateErroResult(System.String,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> with specified detailed error.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[])">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.CreateSuccessResult(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData)">
+            <summary>
+            Returns a new success result.
+            </summary>
+            <param name="value">Response value</param>
+            <returns>
+            A new valid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.FromException(System.Exception)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.FromException(System.Exception,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.Insert(iTin.Utilities.Pdf.Writer.ComponentModel.IInsert,System.Boolean)">
+            <summary>
+            Try to insert an element in this input.
+            </summary>
+            <param name="data">Reference to insertable object information</param>
+            <param name="canInsert">Determines if can insert. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.Replace(iTin.Utilities.Pdf.Writer.ComponentModel.IReplace,System.Boolean)">
+            <summary>
+            Try to replace an element in this input.
+            </summary>
+            <param name="data">Reference to replaceable object information</param>
+            <param name="canReplace">Determines if can replace. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult.Set(iTin.Utilities.Pdf.Writer.ComponentModel.ISet,System.Boolean)">
+            <summary>
+            Try to replace an element in this input.
+            </summary>
+            <param name="data">Reference to replaceable object information</param>
+            <param name="canSet">Determines if can set. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData">
+            <summary>
+            Represents insert data for an object <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/>.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData.Context">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData.InputStream">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData.OutputStream">
+            <summary>
+            Gets or sets a value indicating whether output file has been zipped.
+            </summary>
+            <value>
+            <b>true</b> if output file has been zipped; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult">
+            <summary>
+            Specialization of <see cref="T:iTin.Core.ComponentModel.ResultBase`1"/> interface.<br/>
+            Represents result after set an element in <b>pdf</b> document.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.CreateErroResult(System.String,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed error.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[])">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.CreateErroResult(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData,System.String)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed error.
+            </summary>
+            <param name="message">Error message</param>
+            <param name="value">Response value</param>
+            <param name="code">Error code</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.CreateErroResult(iTin.Core.ComponentModel.IResultError[],iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData)">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed errors collection.
+            </summary>
+            <param name="errors">A errors collection</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new invalid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> with specified detailed errors collection.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.CreateSuccessResult(iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData)">
+            <summary>
+            Returns a new success result.
+            </summary>
+            <param name="value">Response value</param>
+            <returns>
+            A new valid <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.FromException(System.Exception)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.FromException(System.Exception,iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> instance from known exception.
+            </summary>
+            <param name="exception">Target exception.</param>
+            <param name="value">Response value</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> instance for specified exception.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.Insert(iTin.Utilities.Pdf.Writer.ComponentModel.IInsert,System.Boolean)">
+            <summary>
+            Try to insert an element in this input.
+            </summary>
+            <param name="data">Reference to insertable object information</param>
+            <param name="canInsert">Determines if can insert. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.Replace(iTin.Utilities.Pdf.Writer.ComponentModel.IReplace,System.Boolean)">
+            <summary>
+            Try to replace an element in this input.
+            </summary>
+            <param name="data">Reference to replaceable object information</param>
+            <param name="canReplace">Determines if can replace. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult.Set(iTin.Utilities.Pdf.Writer.ComponentModel.ISet,System.Boolean)">
+            <summary>
+            Try to set an element in this input.
+            </summary>
+            <param name="data">Reference to replaceable object information</param>
+            <param name="canSet">Determines if can set. Default is <b>true</b>.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData">
+            <summary>
+            Represents set data for an object <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/>.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData.Context">
+            <summary>
+            Gets or sets a value containing context owner this action
+            </summary>
+            <value>
+            <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert"/> reference containing context owner this action.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData.InputStream">
+            <summary>
+            Gets or sets a value containing input document.
+            </summary>
+            <value>
+            Input document.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData.OutputStream">
+            <summary>
+            Gets or sets a value containing output document.
+            </summary>
+            <value>
+            Output document.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert">
+            <summary>
+            Defines allowed actions for insert objects
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert.Offset">
+            <summary>
+            Gets or sets a reference a point structure which represents the element offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains element offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert.Page">
+            <summary>
+            Gets or sets a value to page number on insert this image.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> object that contains page number on insert this image.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert.Style">
+            <summary>
+            Gets or sets a reference to 
+            </summary>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BaseStyle"/> object that contains a reference to cell style
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the insert action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the inseert action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase">
+            <inheritdoc/>
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IInsert"/> interface.<br/>
+            Acts as base class for insert actions.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase.Offset">
+            <summary>
+            Gets or sets a reference a point structure which represents the element offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase.Page">
+            <summary>
+            Gets or sets a value to page number on insert this image.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> object that contains page number on insert this image.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase.Style">
+            <summary>
+            Gets or sets a reference to 
+            </summary>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BaseStyle"/> object that contains a reference to cell style
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the insert action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the insert action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase.InsertImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when insert action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.InsertImage">
+            <summary>
+            A Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.InsertBase"/> class.<br/>
+            Allows insert an image object.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.InsertImage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.InsertImage"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.InsertImage.Image">
+            <summary>
+            Gets or sets a reference to pdf image object.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Image.PdfImage"/> object that contains a reference to pdf image object.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.InsertImage.Style">
+            <summary>
+            Gets or sets a reference to image style.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfImageStyle"/> reference. 
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.InsertImage.InsertImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when insert action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.IReplace">
+            <summary>
+            Defines allowed actions for replacement objects
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IReplace.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.IReplace.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.EndLocationStrategy">
+            <summary>
+            Defines the strategy of the end point of the element to be inserted.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.EndLocationStrategy.Default">
+            <summary>
+            Use the position defined in the source document. Takes no action.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.EndLocationStrategy.RightMargin">
+            <summary>
+            Sets the end position to the right margin of the document.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.EndLocationStrategy.NextElement">
+            <summary>
+            Sets the end position just at the beginning of the next element, if it does not exist, this value is ignored.
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.StartLocationStrategy">
+            <summary>
+            Defines the strategy of the start point of the element to be inserted.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.StartLocationStrategy.Default">
+            <summary>
+            Use the position defined in the source document. Takes no action.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.StartLocationStrategy.LeftMargin">
+            <summary>
+            Sets the origin position to the left margin of the document
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.StartLocationStrategy.PreviousElement">
+            <summary>
+            Sets the origin position just at the ending of the previous element, if it does not exist, this value is ignored
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.VerticalFineStrategy">
+            <summary>
+            Defines the strategy of the fine vertical point of the element to be inserted.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.VerticalFineStrategy.Top">
+            <summary>
+            Sets the fine vertical position at top of origin container.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.VerticalFineStrategy.Middle">
+            <summary>
+            Sets the fine vertical position at middle of origin container.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.VerticalFineStrategy.Bottom">
+            <summary>
+            Sets the fine vertical position at bottom of origin container.
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions">
+            <summary>
+            Represents replace text options
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.AccordingToMargins">
+            <summary>
+            Gets a default replace text options, according to the margins.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains the default value of replace text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.Default">
+            <summary>
+            Gets a default replace text options, includes <b>Comparison</b> as <b>OrdinalIgnoreCase</b> value and strategies position values as <b>Default</b>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains the default value of replace text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.FromLeftMarginToNextElement">
+            <summary>
+            Gets a default replace text options, sets strategy as left margin position to next element.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains the default value of replace text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.FromPositionToNextElement">
+            <summary>
+            Gets a default replace text options, sets strategy as current position to next element.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains the default value of replace text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.FromPositionToRightMargin">
+            <summary>
+            Gets a default replace text options, sets strategy as current position to right margin.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains the default value of replace text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.Comparison">
+            <summary>
+            Gets or sets a value that represents how to compare strings. The default is <see cref="F:System.StringComparison.OrdinalIgnoreCase"/>.
+            </summary>
+            <value>
+            One of the enumeration values <see cref="T:System.StringComparison"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.EndStrategy">
+            <summary>
+            Gets or sets a value that represents the strategy to follow for the endpoint of the text element to be inserted. The default value is <see cref="F:iTin.Utilities.Pdf.Writer.ComponentModel.EndLocationStrategy.Default"/>.
+            </summary>
+            <value>
+            One of the enumeration values <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.EndLocationStrategy"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.StartStrategy">
+            <summary>
+            Gets or sets a value that represents the strategy to follow for the startpoint of the text element to be inserted. The default value is <see cref="F:iTin.Utilities.Pdf.Writer.ComponentModel.StartLocationStrategy.Default"/>.
+            </summary>
+            <value>
+            One of the enumeration values <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.StartLocationStrategy"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.VerticalStrategy">
+            <summary>
+            Gets or sets a value that represents the vertical replacement strategy to follow for the new element to be inserted. The default value is <see cref="F:iTin.Utilities.Pdf.Writer.ComponentModel.VerticalFineStrategy.Top"/>.
+            </summary>
+            <value>
+            One of the enumeration values <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.VerticalFineStrategy"/>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.IReplacement">
+            <summary>
+            Defines allowed actions for bookmark replacement object
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.IReplacement.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.IReplacement.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.GlobalReplacementsCollection">
+            <summary>
+            Represents a collection of system tags
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement">
+            <summary>
+            Defines allowed actions for text replacement object
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement.ReplaceOptions">
+            <summary>
+            Gets or sets a value that represents text replace options.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement.Text">
+            <summary>
+            Gets or sets the text to replace.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that contains the text to replace.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.IReplacement"/> interface.<br/>
+            Acts as base class for text insert actions.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase.ReplaceOptions">
+            <inheritdoc />
+            <summary>
+            Gets or sets a value that represents text replace options.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase.Text">
+            <summary>
+            Gets or sets the text to replace.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that contains the text to replace.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase.Style">
+            <summary>
+            Gets or sets a reference to style to apply.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BaseStyle"/> object that contains a reference to style to apply
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement">
+            <summary>
+            Defines allowed actions for text replacement object
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement.ReplaceOptions">
+            <summary>
+            Gets or sets a value that represents text replace options.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement.Tag">
+            <summary>
+            Gets or sets a value that contains the system tag to replace.
+            </summary>
+            <value>
+            One of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags"/> enumeration values.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.IReplacement"/> interface.<br/>
+            Acts as base class for system tags replacement actions.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase.ReplaceOptions">
+            <inheritdoc />
+            <summary>
+            Gets or sets a value that represents text replace options.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions"/> instance that contains text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase.Tag">
+            <summary>
+            Gets or sets a value that contains the system tag to replace.
+            </summary>
+            <value>
+            One of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags"/> enumeration values.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase.Style">
+            <summary>
+            Gets or sets a reference to style to apply.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BaseStyle"/> object that contains a reference to style to apply
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase"/> interface.<br/>
+            Contains the logic to replace a text with an image.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.Default">
+            <summary>
+            Returns a new instance of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject"/> class that contains the default values.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject"/> that contains the default values.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.Image">
+            <summary>
+            Gets or sets a reference to pdf image object.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Image.PdfImage"/> object that contains a reference to pdf image object.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.ImageOffset">
+            <summary>
+            Gets or sets a reference a point structure which represents the image offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            Positive values on the y axis move the image down and positive values on the x axis move the image right.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.UseTestMode">
+            <summary>
+            Gets or sets a value that indicates whether the elements to be inserted are shown with a red border that identifies their position and size in order to validate that they are correct. The default value is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if works in mode test; otherwise <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.Style">
+            <summary>
+            Gets or sets a reference to new text style format. The default is <see cref="P:iTin.Utilities.Pdf.Design.Styles.PdfImageStyle.Default"/>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfImageStyle"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithImageObject.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.SystemTagTextReplacementBase"/> interface.<br/>
+            Contains the logic to replace a text with a <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject.Default">
+            <summary>
+            Returns a new instance of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject"/> class that contains the default values.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject"/> that contains the default values.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject.TextOffset">
+            <summary>
+            Gets or sets a reference a point structure which represents the new text offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains new text offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject.UseTestMode">
+            <summary>
+            Gets or sets a value that indicates whether the elements to be inserted are shown with a red border that identifies their position and size in order to validate that they are correct. The default value is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if works in mode test; otherwise <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject.Style">
+            <summary>
+            Gets or sets a reference to new text style format. The default is <see cref="P:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle.Default"/>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithSystemTagObject.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase"/> interface.<br/>
+            Contains the logic to replace a text with a pdf table.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.Default">
+            <summary>
+            Returns a new instance of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject"/> class that contains the default values.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject"/> that contains the default values.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.FixedWidth">
+            <summary>
+            Gets or sets a value that contains the table fixed width to use. The default value is -<see cref="F:System.Single.MinValue"/> (No use fixed width).
+            </summary>
+            <value>
+            A <see cref="T:System.Single"/> object that contains the table fixed width to use.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.Table">
+            <summary>
+            Gets or sets a value that contains the table to replace the text.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Table.PdfTable"/> object that contains the table to replace the text.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.TableOffset">
+            <summary>
+            Gets or sets a reference a point structure which represents the table offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains table offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.UseTestMode">
+            <summary>
+            Gets or sets a value that indicates whether the elements to be inserted are shown with a red border that identifies their position and size in order to validate that they are correct. The default value is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if works in mode test; otherwise <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.Style">
+            <summary>
+            Gets or sets a reference to new text style format. The default is <see cref="P:iTin.Utilities.Pdf.Design.Styles.PdfTableStyle.Default"/>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfTableStyle"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTableObject.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.TextReplacementBase"/> interface.<br/>
+            Contains the logic to replace a text with another text.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.Default">
+            <summary>
+            Returns a new instance of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject"/> class that contains the default values.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject"/> that contains the default values.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.NewText">
+            <summary>
+            Gets or sets a value that contains the new text. The default is same text value.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that contains the new text.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.TextOffset">
+            <summary>
+            Gets or sets a reference a point structure which represents the new text offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains new text offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.UseTestMode">
+            <summary>
+            Gets or sets a value that indicates whether the elements to be inserted are shown with a red border that identifies their position and size in order to validate that they are correct. The default value is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if works in mode test; otherwise <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.Style">
+            <summary>
+            Gets or sets a reference to new text style format. The default is <see cref="P:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle.Default"/>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.WithTextObject.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplacementBase">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.IReplacement"/> interface.<br/>
+            Acts as base class for replacement actions.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplacementBase.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplacementBase.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplacementBase.Style">
+            <summary>
+            Gets or sets a reference to style to apply.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BaseStyle"/> object that contains a reference to style to apply
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplacementBase.ReplaceImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when replace action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceSystemTag">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IReplace"/> interface.<br/>
+            Contains the information for replace a text object.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceSystemTag.#ctor(iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceSystemTag"/> class.
+            </summary>
+            <param name="replacementObject">A object implementation of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement"/>.</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceSystemTag.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceSystemTag.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceSystemTag.ReplacementObject">
+            <summary>
+            Gets a reference to the replacement object.
+            </summary>
+            <value>
+            A reference to replacement object.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceText">
+            <inheritdoc/>
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IReplace"/> interface that contains the information for replace a text object.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceText.#ctor(iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceText"/> class.
+            </summary>
+            <param name="replacementObject">A object implementation of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement"/>.</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceText.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceText.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the replacement action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceText.ReplacementObject">
+            <summary>
+            Gets a reference to the replacement object.
+            </summary>
+            <value>
+            A reference to replacement object.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.ISet">
+            <summary>
+            Defines allowed actions for set features to pdf document.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ISet.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the set action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ISet.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the set action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.SetBase">
+            <summary>
+            Specialization of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ISet"/> interface.<br/>
+            Acts as base class for set actions
+            </summary>
+            <seealso cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ISet"/>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.SetBase.Apply(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the set action.
+            </summary>
+            <param name="file">file input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.SetBase.Apply(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Try to execute the set action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.SetBase.SetImpl(System.IO.Stream,iTin.Utilities.Pdf.Writer.ComponentModel.IInput)">
+            <summary>
+            Implementation to execute when set action.
+            </summary>
+            <param name="input">stream input</param>
+            <param name="context">Input context</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags">
+            <summary>
+            Defines the system replaceable tags.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags.None">
+            <summary>
+            Replace page number tag
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags.PageNumber">
+            <summary>
+            Replace page number tag
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags.TotalPages">
+            <summary>
+            Replace total pages number tag
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTagsCollection">
+            <summary>
+            Represents a collection of system tags
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.ISystemTag">
+            <summary>
+            Defines a generic System Tag.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.ISystemTag.Tag">
+            <summary>
+            Returns a value containing the system tag to replace.
+            </summary>
+            <value>
+            One of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags"/> enumeration values.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.ISystemTag.BuildReplacementObject">
+            <summary>
+            Gets a reference to the replacement object.
+            </summary>
+            <value>
+            A reference to replacement object.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag">
+            <summary>
+            Specialization of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ISystemTag"/> interface that represents the system tag that allows to replace the page number in a document when merging documents.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag.Tag">
+            <summary>
+            Returns a value containing the system tag to replace.
+            </summary>
+            <value>
+            Always return <see cref="F:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags.PageNumber"/>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag.BuildReplacementObject">
+            <summary>
+            Returns a reference to an object that replaces text based on the implementation of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement"/> interface.
+            </summary>
+            <returns>
+            A reference that implements the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ITextReplacement"/> interface.
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag.ReplaceOptions">
+            <summary>
+            Gets or sets a value that represents text replace options.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions" /> instance that contains text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag.Style">
+            <summary>
+            Gets or sets a reference to new text style format. The default is <see cref="P:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle.Default"/>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag.TextOffset">
+            <summary>
+            Gets or sets a reference a point structure which represents the new text offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains new text offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PageNumberSystemTag.UseTestMode">
+            <summary>
+            Gets or sets a value that indicates whether the elements to be inserted are shown with a red border that identifies their position and size in order to validate that they are correct. The default value is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if works in mode test; otherwise <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag">
+            <summary>
+            Specialization of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ISystemTag"/> interface that represents the system tag that allows to replace the total page number in a document when merging documents.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag.Tag">
+            <summary>
+            Returns a value containing the system tag to replace.
+            </summary>
+            <value>
+            Always return <see cref="F:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTags.TotalPages"/>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag.BuildReplacementObject">
+            <summary>
+            Returns a reference to an object that replaces text based on the implementation of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement"/> interface.
+            </summary>
+            <returns>
+            A reference that implements the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.ISystemTagTextReplacement"/> interface.
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag.ReplaceOptions">
+            <summary>
+            Gets or sets a value that represents text replace options.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions" /> instance that contains text options.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag.Style">
+            <summary>
+            Gets or sets a reference to new text style format. The default is <see cref="P:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle.Default"/>.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Styles.PdfTextStyle"/> object that contains image offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag.TextOffset">
+            <summary>
+            Gets or sets a reference a point structure which represents the new text offset. The default is <see cref="F:System.Drawing.PointF.Empty"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> object that contains new text offset to apply.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.TotalPagesSystemTag.UseTestMode">
+            <summary>
+            Gets or sets a value that indicates whether the elements to be inserted are shown with a red border that identifies their position and size in order to validate that they are correct. The default value is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if works in mode test; otherwise <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy">
+            <inheritdoc />
+            <summary>
+            Class LocationTextExtractionStrategy.
+            </summary>
+            <seealso cref="T:iTextSharp.text.pdf.parser.ITextExtractionStrategy"/>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.UndercontentCharacterSpacing">
+            <summary>
+            Gets or sets a value of undercontent character spacing.
+            </summary>
+            <value>
+            A <see cref="T:System.Single"/> that represents undercontent character spacing.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.UndercontentHorizontalScaling">
+            <summary>
+            Gets or sets a value of undercontent horizontal scaling.
+            </summary>
+            <value>
+            A <see cref="T:System.Single"/> that represents undercontent horizontal scaling.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.Color">
+            <summary>
+            Gets or sets a color to use.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that represents a color.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.BeginTextBlock">
+            <summary>
+            Begin text block
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.EndTextBlock">
+            <summary>
+            End Text Block
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.GetResultantText">
+            <summary>
+            Get Resultant Text
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that contains result
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.GetTextLocations(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions)">
+            <summary>
+            Returns a collection of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult"/> objects with search results.
+            </summary>
+            <param name="searchString">Search string</param>
+            <param name="options">Replace options</param>
+            <returns>
+            Collection of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult"/> objects with search results.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.GetExtendedTextLocations(System.String,iTin.Utilities.Pdf.Writer.ComponentModel.ReplaceTextOptions)">
+            <summary>
+            Returns a collection of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult"/> objects with search results.
+            </summary>
+            <param name="searchString">Search string</param>
+            <param name="options">Replace options</param>
+            <returns>
+            Collection of <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult"/> objects with search results.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.RenderImage(iTextSharp.text.pdf.parser.ImageRenderInfo)">
+            <summary>
+            Render text
+            </summary>
+            <param name="renderInfo">render image information</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.RenderText(iTextSharp.text.pdf.parser.TextRenderInfo)">
+            <summary>
+            Render text.
+            </summary>
+            <param name="renderInfo">render text information</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.EndsWithSpace(System.String)">
+            <summary>
+            Determines if string ends with space character
+            </summary>
+            <param name="str">The string.</param>
+            <returns>
+            <b>true</b> if the string ends with a space character, <b>false</b> if the string is empty or ends with a non-space character.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.StartsWithSpace(System.String)">
+            <summary>
+            Determines if string starts with space character
+            </summary>
+            <param name="str">The string.</param>
+            <returns>
+            <b>true</b> if the string starts with a space character, <b>false</b> if the string is empty or starts with a non-space character.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult">
+            <summary>
+            Represents a text chunk location rectangle.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult.TextChunk">
+            <summary>
+            Gets or sets textchunk
+            </summary>
+            <value>
+            A <see cref="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult.TextChunk"/> reference.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult.Rect">
+            <summary>
+            Gets or sets a textchunk rectangle
+            </summary>
+            <value>
+            A <see cref="T:iTextSharp.text.Rectangle"/> reference.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult.EndPoint">
+            <summary>
+            Gets or sets the end text position
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> reference.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.LocationTextResult.StartPoint">
+            <summary>
+            Gets or sets the start text position
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.PointF"/> reference.
+            </value>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk">
+            <inheritdoc/>
+            <summary>
+            Represents a chunk of text, it's orientation, and location relative to the orientation vector.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.SameLineEpsilon">
+            <summary>
+            Defines adjust for determine the same line method.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.CharSpaceWidth">
+            <summary>
+            The width of a single space character in the font of the chunk
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.DistParallelEnd">
+            <summary>
+            Distance of the end of the chunk parallel to the orientation unit vector (i.e. the X position in an unrotated coordinate system) 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.DistParallelStart">
+            <summary>
+            Distance of the start of the chunk parallel to the orientation unit vector (i.e. the X position in an unrotated coordinate system) 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.DistPerpendicular">
+            <summary>
+            Perpendicular distance to the orientation unit vector (i.e. the Y position in an unrotated coordinate system)
+            we round to the nearest integer to handle the fuzziness of comparing floats 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.EndLocation">
+            <summary>
+            The ending location of the chunk 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.OrientationMagnitude">
+            <summary>
+            The orientation as a scalar for quick sorting 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.OrientationVector">
+            <summary>
+            Unit vector in the orientation of the chunk 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.StartLocation">
+            <summary>
+            The starting location of the chunk 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.Text">
+            <summary>
+            The text of the chunk 
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.#ctor(System.String,iTextSharp.text.pdf.parser.Vector,iTextSharp.text.pdf.parser.Vector,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk"/> class.
+            </summary>
+            <param name="str">The string.</param>
+            <param name="startLocation">The start location.</param>
+            <param name="endLocation">The end location.</param>
+            <param name="charSpaceWidth">Width of the character space.</param>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.PosLeft">
+            <summary>
+            Pos left
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.PosRight">
+            <summary>
+            Pos right
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.PosTop">
+            <summary>
+            Pos Top
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.PosBottom">
+            <summary>
+            Pos bottom
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.CurFontSize">
+            <summary>
+            Current font size
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.FontIndex">
+            <summary>
+            Font index
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.FillColor">
+            <summary>
+            Fill color
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.StrokeColor">
+            <summary>
+            Stroke Color
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.Font">
+            <summary>
+            Font
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.CompareTo(iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk)">
+            <inheritdoc />
+            <summary>
+            Compara el objeto actual con otro objeto del mismo tipo.
+            </summary>
+            <param name="other">Objeto que se va a comparar con este objeto.</param>
+            <returns>
+            Un valor que indica el orden relativo de los objetos que se están comparando.El valor devuelto tiene los siguientes significados
+            Menor que cero Este objeto es menor que el parámetro <paramref name="other"/>.
+            Cero Este objeto es igual que <paramref name="other"/>.
+            Mayor que cero Este objeto es mayor que <paramref name="other"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.DistanceFromEndOf(iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk)">
+            <summary>
+            Computes the distance between the end of 'other' and the beginning of this chunk
+            in the direction of this chunk's orientation vector. Note that it's a bad idea
+            to call this for chunks that aren't on the same line and orientation, but we don't
+            explicitly check for that condition for performance reasons.
+            </summary>
+            <param name="other">The other chunk.</param>
+            <returns>
+            The number of spaces between the end of 'other' and the beginning of this chunk.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.SameLine(iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk)">
+            <summary>
+            Compares two instances.
+            </summary>
+            <param name="other">The location to compare.</param>
+            <returns>
+            <b>true</b> if is this location is on the the same line as the other, <b>false</b> otherwise.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.LocationTextExtractionStrategy.TextChunk.CompareInts(System.Int32,System.Int32)">
+            <summary>
+            Compares two integer values.
+            </summary>
+            <param name="int1">Left value</param>
+            <param name="int2">Right value</param>
+            <returns>
+            Comparison of the two integers.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig">
+            <inheritdoc/>
+            <summary>
+            Represents configuration information for an object <see cref="T:iTin.Utilities.Pdf.Writer.PdfObject"/>.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.OneMegaByte">
+            <summary>
+            Defines a one-megabyte in bytes.
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.Default">
+            <summary>
+            Defaults configuration. Use index and delete the physical files after merge.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.AllowCompression">
+            <summary>
+            Gets or sets a value indicating whether compression is allowed.
+            </summary>
+            <value>
+            <b>true</b> if compression is allowed; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.CompressionThreshold">
+            <summary>
+            Gets or sets a value that establishes the threshold from which the output stream will be compressed, this value will be set to <b>MB</b>, remember that a <b>MB</b> equals 1.024 Bytes.
+            </summary>
+            <value>
+            A <see cref="T:System.Single"/> that contains compression threshold in <b>MB</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.DeletePhysicalFilesAfterMerge">
+            <summary>
+            Gets or sets a value indicating whether delete physical files after merge.
+            </summary>
+            <value>
+            <b>true</b> if delete physical files after merge; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.GlobalReplacements">
+            <summary>
+            Gets or sets a value that contains the collection of global text replacements when the elements are merged.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Replacement.Text.GlobalReplacementsCollection"/> that contains the collection of global text replacements when the elements are merged.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.Tags">
+            <summary>
+            Gets or sets a value that contains the collection of system tags to replace when the elements are merged.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.SystemTagsCollection"/> that contains the collection of system tags to replace when the elements are merged.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.UseIndex">
+            <summary>
+            Gets or sets a value indicating whether use index.
+            </summary>
+            <value>
+            <b>true</b> if uses index; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.AlignmentExtensions">
+            <summary>
+            Static class than contains common extension methods for <see cref="T:iTin.Core.Models.Design.Enums.KnownHorizontalAlignment"/> enumeration.
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.PdfExtensions">
+            <summary>
+            Static class than contains common extension methods for objects of the namespace <see cref="N:iTextSharp.text.pdf"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.AddCells(iTextSharp.text.pdf.PdfPTable,System.Collections.ObjectModel.Collection{iTextSharp.text.pdf.PdfPCell})">
+            <summary>
+            Adds the cells.
+            </summary>
+            <param name="table">The Table.</param>
+            <param name="cells">Cells to adds.</param>
+            <returns>
+            <see cref="T:iTextSharp.text.pdf.PdfPTable" /> which contains the range cells.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.SetAlignmentVisualStyle(iTextSharp.text.pdf.PdfPCell,iTin.Utilities.Pdf.Design.Styles.PdfTextContentAlignment)">
+            <summary>
+            Sets visual text alignment for specified cell.
+            </summary>
+            <param name="cell">Cell which receives visual style.</param>
+            <param name="alignment">Text alignment to apply.</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.SetBordersVisualStyle(iTextSharp.text.pdf.PdfPCell,iTin.Core.Models.Design.Styling.BordersCollection)">
+            <summary>
+            Sets visual border style for specified cell.
+            </summary>
+            <param name="cell">Cell which receives visual style.</param>
+            <param name="borders">Border collection definition to apply.</param>
+            <returns>
+            A <see cref="T:iTextSharp.text.pdf.PdfPCell"/> object which contains specified visual style.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.SetVisualStyle(iTextSharp.text.Image,iTin.Utilities.Pdf.Design.Styles.PdfImageStyle)">
+            <summary>
+            Sets visual border style for specified <see cref="T:iTextSharp.text.Image"/>.
+            </summary>
+            <param name="image">Horizontal alignment.</param>
+            <param name="style">Style to apply.</param>
+            <returns>
+            A <see cref="T:System.Int32"/> value that represents the alignment.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.SetVisualStyle(iTextSharp.text.pdf.PdfPCell,iTin.Utilities.Pdf.Design.Styles.PdfTextStyle,iTin.Core.Models.Design.Enums.YesNo)">
+            <summary>
+            Sets visual style for specified cell.
+            </summary>
+            <param name="cell">Cell which receives visual style.</param>
+            <param name="style">Style to apply.</param>
+            <param name="useTestMode">Indicates if draw a border in testmode.</param>
+            <returns>
+            A <see cref="T:iTextSharp.text.pdf.PdfPCell"/> object which contains specified visual style.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.ToHorizontalTableAlignment(iTin.Core.Models.Design.Enums.KnownHorizontalAlignment)">
+            <summary>
+            Converts one of the enumeration values <see cref="T:iTin.Core.Models.Design.Enums.KnownHorizontalAlignment"/> to the proper alignment value for <b>iTextSharp</b>.
+            </summary>
+            <param name="horizontalAlignment">Horizontal alignment.</param>
+            <returns>
+            A <see cref="T:System.Int32"/> value that represents the alignment.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.ToVerticalTableAlignment(iTin.Core.Models.Design.Enums.KnownVerticalAlignment)">
+            <summary>
+            Converts one of the enumeration values <see cref="T:iTin.Core.Models.Design.Enums.KnownVerticalAlignment"/> to the proper vertical alignment value for <b>iTextSharp</b>.
+            </summary>
+            <param name="verticalAlignment">Vertical alignment.</param>
+            <returns>
+            A <see cref="T:System.Int32"/> value that represents the vertical alignment.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.ToElementHorizontalAlignment(iTin.Core.Models.Design.Enums.KnownHorizontalAlignment)">
+            <summary>
+            Converts the enumerated type <see cref="T:iTin.Core.Models.Design.Enums.KnownHorizontalAlignment"/> to the appropriate value for the specified alignment.
+            </summary>
+            <param name="alignment">Alignment to convert.</param>
+            <returns>
+            A <see cref="T:System.Int32"/> value that represents appropriate the value for the specified alignment.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfExtensions.ToElementVerticalAlignment(iTin.Core.Models.Design.Enums.KnownVerticalAlignment)">
+            <summary>
+            Converts the enumerated type <see cref="T:iTin.Core.Models.Design.Enums.KnownVerticalAlignment"/> to the appropriate value for the specified alignment.
+            </summary>
+            <param name="alignment">Alignment to convert.</param>
+            <returns>
+            A <see cref="T:System.Int32"/> value that represents appropriate the value for the specified alignment.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.PdfInputExtensions">
+            <summary>
+            Static class than contains common extension methods for objects of type <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInputExtensions.Clone(System.Collections.Generic.IEnumerable{iTin.Utilities.Pdf.Writer.PdfInput})">
+            <summary>
+            Clones the specified items.
+            </summary>
+            <param name="items">The items.</param>
+            <returns>IEnumerable&lt;PdfInput&gt;.</returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInputExtensions.CreateJoinResult(System.Collections.Generic.IEnumerable{iTin.Utilities.Pdf.Writer.PdfInput},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Returns a new <see cref="T:iTin.Utilities.Pdf.ComponentModel.OutputResult" /> reference thats represents a one <b>unique zip stream</b> that contains the same entries in <param ref="items"/> 
+            but compressed individually using the name in <param ref="filenames"/>.         
+            </summary>
+            <param name="items">Items</param>
+            <param name="filenames">Item filenames.</param>
+            <returns>
+            A <see cref="T:iTin.Core.ComponentModel.OutputResult" /> reference that contains action result.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInputExtensions.ToOutputResults(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{iTin.Utilities.Pdf.Writer.PdfInput}})">
+            <summary>
+            Merges every entry list in <paramref name="multiInputItems"/> parameter into a unique <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> item.
+            </summary>
+            <param name="multiInputItems">The list of input items list to merge.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1"/>.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper">
+            <summary>
+            Contains common helper methods for Portable Document Format (pdf format).
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper.CreateCell(System.String,iTin.Utilities.Pdf.Design.Styles.PdfTextStyle,iTin.Core.Models.Design.Enums.YesNo)">
+            <summary>
+            Creates a new cell with the visual style defined in the model.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="style">The style.</param>
+            <param name="useTestMode">Indicates if draw a border in testmode.</param>
+            <returns>
+            A new <see cref="T:iTextSharp.text.pdf.PdfPCell"/> with visual style defined in the model.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper.CreateEmptyCell(iTin.Core.Models.Design.Enums.YesNo,iTin.Core.Models.Design.Styling.BordersCollection)">
+            <summary>
+            Creates a new empty cell.
+            </summary>
+            <param name="useTestMode">Indicates if draw a border in testmode.</param>
+            <param name="borders">The borders color, it allows defining the background color so as not to draw a border when we do not use test mode.</param>
+            <returns>
+            A new <see cref="T:iTextSharp.text.pdf.PdfPCell"/> with visual style defined in the model.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper.CreateEmptyWithBorderCell(iTin.Core.Models.Design.Styling.BordersCollection)">
+            <summary>
+            Creates a new empty cell with border(s).
+            </summary>
+            <param name="borders">Borders definition.</param>
+            <returns>
+            A new <see cref="T:iTextSharp.text.pdf.PdfPCell"/> with visual style defined in the model.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper.CreateEmptyWithoutBorderCell">
+            <summary>
+            Creates a new empty cell without border(s).
+            </summary>
+            <returns>
+            A new <see cref="T:iTextSharp.text.pdf.PdfPCell"/> with visual style defined in the model.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper.CreateFont(iTin.Core.Models.Design.FontModel)">
+            <summary>
+            Creates a new font from model.
+            </summary>
+            <param name="font">Font to create.</param>
+            <returns>
+            A new <see cref="T:iTextSharp.text.Font"/> that contains specified font from model.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.Helpers.PdfHelper.DefaultFont">
+            <summary>
+            Creates a new font which is default font from model.
+            </summary>
+            <returns>
+            A new <see cref="T:iTextSharp.text.Font"/> that contains default font from model.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.PdfFonts">
+            <summary>
+            Represents 
+            </summary>
+        </member>
+        <member name="F:iTin.Utilities.Pdf.Writer.PdfFonts.Fonts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfFonts.RegisterFont(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fontName">Font name</param>
+            <param name="fontFullPath">Full path to font file</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfFonts.RegisterFonts(System.String[],System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="fontNames">Font name</param>
+            <param name="fontFullPaths">Full path to font file</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfFonts.RegisterDefaultFonts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.PdfInput">
+            <summary>
+            Represents a pdf file.
+            </summary>
+            <seealso cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.IInput"/>
+            <seealso cref="T:System.ICloneable"/>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/> class.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.System#ICloneable#Clone">
+            <inheritdoc/>
+            <summary>
+            Create a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Object"/> that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfInput.AutoUpdateChanges">
+            <summary>
+            Gets or sets a value indicating whether automatic updates for changes.
+            </summary>
+            <value>
+            <b>true</b> if automatic update changes; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfInput.DeletePhysicalFilesAfterMerge">
+            <summary>
+            Gets or sets a value indicating whether delete physical files after merge.
+            </summary>
+            <value>
+            <b>true</b> if delete physical files after merge; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfInput.Index">
+            <summary>
+            Gets or sets a value that contains input index.
+            </summary>
+            <value>
+            A <see cref="T:System.Int32"/> that contains input index.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfInput.Input">
+            <summary>
+            Gets or sets the input object.
+            </summary>
+            <value>
+            The input.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfInput.InputType">
+            <summary>
+            Gets input type.
+            </summary>
+            <value>
+            An value of enumeration <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.KnownInputType"/> indicating type of the input.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.CreateResult(iTin.Utilities.Pdf.Writer.ComponentModel.OutputResultConfig)">
+            <summary>
+            Returns a new reference <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> that complies with what is indicated in its configuration object. By default, this <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/> will not be zipped.
+            </summary>
+            <param name="config">The output result configuration.</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.Insert(iTin.Utilities.Pdf.Writer.ComponentModel.IInsert)">
+            <summary>
+            Try to insert an element in this input.
+            </summary>
+            <param name="data">Reference to insertable object information</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Insert.InsertResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.Replace(iTin.Utilities.Pdf.Writer.ComponentModel.IReplace)">
+            <summary>
+            Try to replace an element in this input.
+            </summary>
+            <param name="data">Reference to replacement object information</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Replace.ReplaceResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.Set(iTin.Utilities.Pdf.Writer.ComponentModel.ISet)">
+            <summary>
+            Try to set an element in this input.
+            </summary>
+            <param name="data">Reference to seteable object information</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Set.SetResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.SaveToFile(System.String,iTin.Core.ComponentModel.SaveOptions)">
+            <summary>
+            Saves this input into a file.
+            </summary>
+            <param name="outputPath">The output path. The use of the <b>~</b> character is allowed to indicate relative paths, and you can also use <b>UNC</b> path.</param>
+            <param name="options">Save options</param>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Core.ComponentModel.Results.BooleanResult"/> which implements the <see cref="T:iTin.Core.ComponentModel.IResult"/> interface reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:System.Boolean"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.ToStream">
+            <summary>
+            Convert this input into a stream object.
+            </summary>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> that represents this input file.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.CreateFromHtml(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            Creates a new <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/> object from <b>HTML</b> code.
+            </summary>
+            <param name="html">HTML code to convert</param>
+            <param name="css">CSS code to use with HTML code</param>
+            <param name="encoding">Encoding to use</param>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/> object which contains the HTML code.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.Clone">
+            <summary>
+            Create a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/> that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.SearchText(System.String)">
+            <summary>
+            Search specified text into this input file.
+            </summary>
+            <param name="text">Text to search.</param>
+            <returns>
+            A <see cref="T:iTin.Utilities.Pdf.Design.Text.PdfText"/> list of matches. 
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfInput.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Utilities.Pdf.Writer.PdfObject">
+            <summary>
+            Represents a generic pdf object, this allows add pdf files to <see cref="P:iTin.Utilities.Pdf.Writer.PdfObject.Items"/> property and specify a user custom configuration.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.#ctor">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.PdfObject"/> class with default configuration.
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.#ctor(iTin.Utilities.Pdf.Writer.ComponentModel.PdfObjectConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Utilities.Pdf.Writer.PdfObject"/> class with specified configuration
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.Dispose">
+            <summary>
+            Clean managed resources
+            </summary>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfObject.Items">
+            <summary>
+            Gets or sets the pdf input list.
+            </summary>
+            <value>
+            The items.
+            </value>
+        </member>
+        <member name="P:iTin.Utilities.Pdf.Writer.PdfObject.Configuration">
+            <summary>
+            Gets the configuration settings.
+            </summary>
+            <value>
+            The object configuration.
+            </value>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.TryMergeInputs">
+            <summary>
+            Merges all <see cref="T:iTin.Utilities.Pdf.Writer.PdfInput"/> entries.
+            </summary>
+            <returns>
+            <para>
+            A <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResult"/> reference that contains the result of the operation, to check if the operation is correct, the <b>Success</b>
+            property will be <b>true</b> and the <b>Value</b> property will contain the value; Otherwise, the the <b>Success</b> property
+            will be false and the <b>Errors</b> property will contain the errors associated with the operation, if they have been filled in.
+            </para>
+            <para>
+            The type of the return value is <see cref="T:iTin.Utilities.Pdf.Writer.ComponentModel.Result.Output.OutputResultData"/>, which contains the operation result
+            </para>
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.ToString">
+            <summary>
+            Returns a string that represents the current data type.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> than represents the current object.
+            </returns>
+        </member>
+        <member name="M:iTin.Utilities.Pdf.Writer.PdfObject.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iTin.Core.Models.Design.Styling</name>
+    </assembly>
+    <members>
+        <member name="T:iTin.Core.Models.Design.Styling.IStyles">
+            <summary>
+            Defines a generic style
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IStyles.GetBy(System.String)">
+            <summary>
+            Returns specified style by name
+            </summary>
+            <param name="value">Style name to get</param>
+            <returns>
+            A <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/> reference.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.StylesCollection">
+            <summary>
+            Defines a styles collection.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.#ctor">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.StylesCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.#ctor(System.Object)">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.StylesCollection"/> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.iTin#Core#Models#Design#Styling#IStyles#GetBy(System.String)">
+            <summary>
+            Returns specified style by name.
+            </summary>
+            <param name="value">Style name to get</param>
+            <returns>
+            A <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/> reference.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.GetBy(System.String)">
+            <inheritdoc />
+            <summary>
+            Returns the element specified.
+            </summary>
+            <param name="value">The object to locate in the <see cref="T:iTin.Core.Models.Collections.BaseComplexModelCollection`3"/>.</param>
+            <returns>
+            Returns the specified element.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.SetOwner(iTin.Core.Models.Design.Styling.BaseStyle)">
+            <inheritdoc />
+            <summary>
+            Sets this collection as the owner of the specified item.
+            </summary>
+            <param name="item">Target item to set owner.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.StylesCollection.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.BaseStyle">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/> interface.<br/>
+            Defines a generic style.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Models.Design.Styling.BaseStyle.NameOfDefaultStyle">
+            <summary>
+            The name of default style. Always is '_Default_'.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.iTin#Core#Models#Design#ICombinable{iTin#Core#Models#Design#Styling#IStyle}#Combine(iTin.Core.Models.Design.Styling.IStyle)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference style</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.iTin#Core#Models#Design#Styling#IStyle#Borders">
+            <summary>
+            Gets or sets the collection of border properties.
+            </summary>
+            <value>
+            Collection of border properties. Each element defines a border.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.iTin#Core#Models#Design#Styling#IStyle#Content">
+            <summary>
+            Gets or sets the content of style
+            </summary>
+            <value>
+            Content
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.iTin#Core#Models#Design#Styling#IStyle#IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.iTin#Core#Models#Design#Styling#IStyle#SetOwner(iTin.Core.Models.Design.IOwner)">
+            <summary>
+            Sets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/>.
+            </summary>
+            <param name="reference">Reference to owner.</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Owner">
+            <summary>
+            Gets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/>.
+            </summary>
+            <value>
+            The <see cref="T:iTin.Core.Models.Design.IOwner"/> that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyles"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Name">
+            <summary>
+            Gets or sets the name of the style.
+            </summary>
+            <value>
+            The name of the style.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Inherits">
+            <summary>
+            Gets or sets the name of parent style.
+            </summary>
+            <value>
+            The name of parent style.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.TryGetInheritStyle">
+            <summary>
+            Try gets a reference to inherit model.
+            </summary>
+            <returns>
+            An inherit style.
+            </returns>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Default">
+            <summary>
+            Gets a default style.
+            </summary>
+            <value>
+            A default style.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Empty">
+            <summary>
+            Gets an empty style.
+            </summary>
+            <value>
+            An empty style.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.BordersSpecified">
+            <summary>
+            Gets a value that tells the serializer if the referenced item is to be included.
+            </summary>
+            <value>
+            <b>true</b> if the serializer has to include the element; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.ContentSpecified">
+            <summary>
+            Gets a value that tells the serializer if the referenced item is to be included.
+            </summary>
+            <value>
+            <b>true</b> if the serializer has to include the element; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Borders">
+            <summary>
+            Gets or sets the collection of border properties.
+            </summary>
+            <value>
+            Collection of border properties. Each element defines a border.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.Content">
+            <summary>
+            Gets or sets a reference to the content model.
+            </summary>
+            <value>
+            Reference that contains the definition of as shown the content.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseStyle.InheritStyle">
+            <summary>
+            Gets a reference to inherit model.
+            </summary>
+            <value>
+            A inherit style.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.GenerateRandomStyleName">
+            <summary>
+            Returns a random style name.
+            </summary>
+            <returns>
+            A new style name.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.Combine(iTin.Core.Models.Design.Styling.BaseStyle)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.Combine(iTin.Core.Models.Design.Styling.BaseStyle,System.Boolean)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference style</param>
+            <param name="forceInherits">Reference style</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseStyle.SetOwner(iTin.Core.Models.Design.IOwner)">
+            <summary>
+            Sets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/>.
+            </summary>
+            <param name="reference">Reference to owner.</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.IStyle">
+            <summary>
+            Defines a generic style
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.Borders">
+            <summary>
+            Gets or sets the collection of border properties.
+            </summary>
+            <value>
+            Collection of border properties. Each element defines a border.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.Content">
+            <summary>
+            Gets or sets a reference to the content model.
+            </summary>
+            <value>
+            Reference that contains the definition of as shown the content.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.Inherits">
+            <summary>
+            Gets or sets the name of parent style.
+            </summary>
+            <value>
+            The name of parent style.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.Name">
+            <summary>
+            Gets or sets the name of the style.
+            </summary>
+            <value>
+            The name of the style.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IStyle.Owner">
+            <summary>
+            Gets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/>.
+            </summary>
+            <value>
+            The <see cref="T:iTin.Core.Models.Design.IOwner"/> that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IStyle.SetOwner(iTin.Core.Models.Design.IOwner)">
+            <summary>
+            Sets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IStyle"/>.
+            </summary>
+            <param name="reference">Reference to owner.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IStyle.TryGetInheritStyle">
+            <summary>
+            Try gets a reference to inherit model.
+            </summary>
+            <returns>
+            An inherit style.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.IBorders">
+            <summary>
+            Defines a generic style
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.BordersCollection">
+            <summary>
+            Defines a borders collection.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.#ctor">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.BordersCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.#ctor(System.Object)">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.BordersCollection"/> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.iTin#Core#Models#Design#ICombinable{iTin#Core#Models#Design#Styling#IBorders}#Combine(iTin.Core.Models.Design.Styling.IBorders)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference style</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.FromCustomColor(System.String)">
+            <summary>
+            Returns a new border collection for specified color.
+            </summary>
+            <param name="borderColor">Border color</param>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BordersCollection"/> reference.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.FromKnownColor(iTin.Core.Models.Design.Enums.KnownBorderColor)">
+            <summary>
+            Returns a new border collection for specified color.
+            </summary>
+            <param name="borderColor">Border color</param>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BordersCollection"/> reference.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.GetBy(iTin.Core.Models.Design.Enums.KnownBorderPosition)">
+            <inheritdoc />
+            <summary>
+            Returns the element specified.
+            </summary>
+            <param name="value">The object to locate in the <see cref="T:iTin.Core.Models.Collections.BaseComplexModelCollection`3"/>.</param>
+            <returns>
+            Returns the specified element.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.SetOwner(iTin.Core.Models.Design.Styling.BaseBorder)">
+            <inheritdoc />
+            <summary>
+            Sets this collection as the owner of the specified item.
+            </summary>
+            <param name="item">Target item to set owner.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BordersCollection.Combine(iTin.Core.Models.Design.Styling.BordersCollection)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">The reference.</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.BaseBorder">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Models.Design.Styling.IBorder"/> interface.<br/>
+            Which acts as the base class for different border configurations.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.BaseBorder"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.iTin#Core#Models#Design#Styling#IBorder#IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty border.
+            </summary>
+            <value>
+            <b>true</b> if is an empty border; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.iTin#Core#Models#Design#Styling#IBorder#SetOwner(iTin.Core.Models.Design.Styling.IBorders)">
+            <summary>
+            Sets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IBorder"/>.
+            </summary>
+            <param name="reference">Reference to owner.</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Owner">
+            <summary>
+            Gets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IBorder"/>.
+            </summary>
+            <value>
+            The <see cref="T:iTin.Core.Models.Design.Styling.IBorders"/> that owns this <see cref="T:iTin.Core.Models.Design.Styling.IBorder"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Color">
+            <summary>
+            Gets or sets preferred border color. The default is <b>Black</b>.
+            </summary>
+            <value>
+            Preferred border color.
+            </value>
+            <exception cref="T:System.ArgumentNullException">The value specified is <b>null</b>.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Position">
+            <summary>
+            Gets or sets preferred border position.
+            </summary>
+            <value>
+            Preferred border position.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Show">
+            <summary>
+            Gets or sets a value that determines whether to display the border. The default is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if display the border; otherwise, <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Style">
+            <summary>
+            Gets or sets preferred border line style. The default is <see cref="F:iTin.Core.Models.Design.Enums.KnownLineStyle.Continuous"/>.
+            </summary>
+            <value>
+            Preferred border line style.
+            </value>
+            <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.GetColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents color for this border.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents color for this border.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.iTin#Core#Models#Design#ICombinable{iTin#Core#Models#Design#Styling#IBorder}#Combine(iTin.Core.Models.Design.Styling.IBorder)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference border</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Default">
+            <summary>
+            Gets a default border.
+            </summary>
+            <value>
+            A default border.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Empty">
+            <summary>
+            Gets an empty border.
+            </summary>
+            <value>
+            An empty border.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBorder.Width">
+            <summary>
+            Gets or sets the width of a border. The default is <b>1</b>.
+            </summary>
+            <value>
+            An <see cref="T:System.Single"/> value that determines the width of a border.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.Combine(iTin.Core.Models.Design.Styling.BaseBorder)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference border</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBorder.SetOwner(iTin.Core.Models.Design.Styling.IBorders)">
+            <summary>
+            Sets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IBorders"/>.
+            </summary>
+            <param name="reference">Reference to owner.</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.IBorder">
+            <summary>
+            Defines a generic style
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBorder.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBorder.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBorder.Color">
+            <summary>
+            Gets or sets preferred border color.
+            </summary>
+            <value>
+            Preferred border color.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBorder.Position">
+            <summary>
+            Gets or sets preferred border position.
+            </summary>
+            <value>
+            Preferred border position.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBorder.Show">
+            <summary>
+            Gets or sets a value that determines whether to display the border.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if display the border; otherwise, <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>. 
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBorder.Style">
+            <summary>
+            Gets or sets preferred border line style.
+            </summary>
+            <value>
+            Preferred border line style.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IBorder.GetColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents color for this border.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents color for this border.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IBorder.SetOwner(iTin.Core.Models.Design.Styling.IBorders)">
+            <summary>
+            Sets the element that owns this <see cref="T:iTin.Core.Models.Design.Styling.IBorder"/>.
+            </summary>
+            <param name="reference">Reference to owner.</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.BaseContent">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Models.Design.Styling.IContent"/> interface.<br/>
+            Which acts as the base class for different contents.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Models.Design.Styling.BaseContent.DefaultColor">
+            <summary>
+            Defines default content color.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.BaseContent"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.iTin#Core#Models#Design#Styling#IContent#IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty border.
+            </summary>
+            <value>
+            <b>true</b> if is an empty border; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.iTin#Core#Models#Design#Styling#IContent#SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.AlternateColor">
+            <summary>
+            Gets or sets preferred alternate content color. The default is <b>Transparent</b>.
+            </summary>
+            <value>
+            Preferred alternate content color.
+            </value>
+            <exception cref="T:System.ArgumentNullException">The value specified is <b>null</b>.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.Color">
+            <summary>
+            Gets or sets preferred content color. The default is <b>Transparent</b>.
+            </summary>
+            <value>
+            Preferred content color.
+            </value>
+            <exception cref="T:System.ArgumentNullException">The value specified is <b>null</b>.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.Show">
+            <summary>
+            Gets or sets a value that determines whether to display this content picture. The default is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if display this content picture; otherwise, <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+            <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.GetAlternateColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents alternate color for this content.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents alternate color for this content.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.GetColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents color for this border.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents color for this border.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.iTin#Core#Models#Design#ICombinable{iTin#Core#Models#Design#Styling#IContent}#Combine(iTin.Core.Models.Design.Styling.IContent)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.iTin#Core#Models#Design#Styling#IContent#Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.Default">
+            <summary>
+            Gets a default content.
+            </summary>
+            <value>
+            A default content.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContent.Empty">
+            <summary>
+            Gets an empty content.
+            </summary>
+            <value>
+            An empty content.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContent.Combine(iTin.Core.Models.Design.Styling.BaseContent)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.IContent">
+            <summary>
+            Defines a generic content.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContent.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContent.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContent.Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContent.Color">
+            <summary>
+            Gets or sets preferred content color.
+            </summary>
+            <value>
+            Preferred border color.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContent.AlternateColor">
+            <summary>
+            Gets or sets preferred alternate content color.
+            </summary>
+            <value>
+            Preferred border color.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContent.Show">
+            <summary>
+            Gets or sets a value that determines whether to display the border.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if display the border; otherwise, <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>. 
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IContent.GetAlternateColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents alternate color for this content.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents alternate color for this content.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IContent.GetColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents color for this content.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents color for this content.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IContent.SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.BaseContentAlignment">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Models.Design.Styling.IContentAlignment"/> interface.<br/>
+            Which acts as the base class for different content alignment configurations.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.BaseContentAlignment"/> class.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.iTin#Core#Models#Design#ICombinable{iTin#Core#Models#Design#Styling#IContentAlignment}#Combine(iTin.Core.Models.Design.Styling.IContentAlignment)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content alignment</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.iTin#Core#Models#Design#Styling#IContentAlignment#IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty content alignment.
+            </summary>
+            <value>
+            <b>true</b> if is an empty content alignment; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.iTin#Core#Models#Design#Styling#IContentAlignment#SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.Horizontal">
+            <summary>
+            Gets or sets preferred horizontal content alignemnt. The default is <see cref="F:iTin.Core.Models.Design.Enums.KnownHorizontalAlignment.Left"/>.
+            </summary>
+            <value>
+            Preferred horizontal content alignemnt.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.iTin#Core#Models#Design#Styling#IContentAlignment#Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.Default">
+            <summary>
+            Gets a default content alignment.
+            </summary>
+            <value>
+            A content alignment.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.Empty">
+            <summary>
+            Gets an empty content alignment.
+            </summary>
+            <value>
+            An empty content alignment.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseContentAlignment.Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseContentAlignment.Combine(iTin.Core.Models.Design.Styling.BaseContentAlignment)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content alignment</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.IContentAlignment">
+            <summary>
+            Defines a generic content alignment.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContentAlignment.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContentAlignment.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>       
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContentAlignment.Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IContentAlignment.Horizontal">
+            <summary>
+            Gets or sets preferred horizontal alignment.
+            </summary>
+            <value>
+            Preferred horizontal alignment.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.IContentAlignment.SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.BaseBasicContent">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Models.Design.Styling.IBasicContent"/> interface.<br/>
+            Which acts as the base class for different contents.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Models.Design.Styling.BaseBasicContent.DefaultColor">
+            <summary>
+            Defines default content color.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Models.Design.Styling.BaseBasicContent"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.iTin#Core#Models#Design#Styling#IBasicContent#Alignment">
+            <summary>
+            Gets or sets the collection of border properties.
+            </summary>
+            <value>
+            Collection of border properties. Each element defines a border.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty style.
+            </summary>
+            <value>
+            <b>true</b> if is an empty style; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.IsDefault">
+            <summary>
+            Gets a value indicating whether this instance is default.
+            </summary>
+            <value>
+            <b>true</b> if this instance contains the default; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.System#ICloneable#Clone">
+            <inheritdoc />
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.iTin#Core#Models#Design#Styling#IContent#IsEmpty">
+            <summary>
+            Gets a value indicating whether this style is an empty border.
+            </summary>
+            <value>
+            <b>true</b> if is an empty border; otherwise, <b>false</b>.
+            </value>        
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.iTin#Core#Models#Design#Styling#IContent#SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.AlternateColor">
+            <summary>
+            Gets or sets preferred alternate content color. The default is <b>Black</b>.
+            </summary>
+            <value>
+            Preferred alternate content color.
+            </value>
+            <exception cref="T:System.ArgumentNullException">The value specified is <b>null</b>.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.Color">
+            <summary>
+            Gets or sets preferred content color. The default is <b>Black</b>.
+            </summary>
+            <value>
+            Preferred content color.
+            </value>
+            <exception cref="T:System.ArgumentNullException">The value specified is <b>null</b>.</exception>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.Show">
+            <summary>
+            Gets or sets a value that determines whether to display the border. The default is <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/>.
+            </summary>
+            <value>
+            <see cref="F:iTin.Core.Models.Design.Enums.YesNo.Yes"/> if display the border; otherwise, <see cref="F:iTin.Core.Models.Design.Enums.YesNo.No"/>.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.Combine(iTin.Core.Models.Design.Styling.IContent)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.GetAlternateColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents alternate color for this content.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents alternate color for this content.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.GetColor">
+            <summary>
+            Gets a reference to the <see cref="T:System.Drawing.Color"/> structure that represents color for this content.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Color"/> structure that represents color for this content.
+            </returns> 
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.iTin#Core#Models#Design#ICombinable{iTin#Core#Models#Design#Styling#IBasicContent}#Combine(iTin.Core.Models.Design.Styling.IBasicContent)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content</param>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.iTin#Core#Models#Design#Styling#IContent#Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.AlignmentSpecified">
+            <summary>
+            Gets a value that tells the serializer if the referenced item is to be included.
+            </summary>
+            <value>
+            <b>true</b> if the serializer has to include the element; otherwise, <b>false</b>.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.Parent">
+            <summary>
+            Gets the parent element of the element.
+            </summary>
+            <value>
+            The element that represents the container element of the element.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.Default">
+            <summary>
+            Gets a default content.
+            </summary>
+            <value>
+            A default content.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.Empty">
+            <summary>
+            Gets an empty content.
+            </summary>
+            <value>
+            An empty content.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.BaseBasicContent.Alignment">
+            <summary>
+            Gets or sets a reference to content alignment.
+            </summary>
+            <value>
+            A <see cref="T:iTin.Core.Models.Design.Styling.BaseContentAlignment"/> reference.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.SetParent(iTin.Core.Models.Design.IParent)">
+            <summary>
+            Sets the parent element of the element.
+            </summary>
+            <param name="reference">Reference to parent.</param>
+        </member>
+        <member name="M:iTin.Core.Models.Design.Styling.BaseBasicContent.Combine(iTin.Core.Models.Design.Styling.BaseBasicContent)">
+            <summary>
+            Combines this instance with reference parameter.
+            </summary>
+            <param name="reference">Reference content alignment</param>
+        </member>
+        <member name="T:iTin.Core.Models.Design.Styling.IBasicContent">
+            <summary>
+            Defines a generic content.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Models.Design.Styling.IBasicContent.Alignment">
+            <summary>
+            Gets or sets a reference to the content alignment.
+            </summary>
+            <value>
+            Reference that contains the definition of a content alignment.
+            </value>
+        </member>
+    </members>
+</doc>

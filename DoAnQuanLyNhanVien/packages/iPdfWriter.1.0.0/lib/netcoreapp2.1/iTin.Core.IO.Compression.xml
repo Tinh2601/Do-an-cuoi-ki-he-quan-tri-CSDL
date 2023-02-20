@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iTin.Core.IO.Compression</name>
+    </assembly>
+    <members>
+        <member name="T:iTin.Core.IO.Compression.ByteArrayExtensions">
+            <summary>
+            Static class than contains extension methods for objects <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.IO.Compression.ByteArrayExtensions.TrySaveAsZip(System.Byte[],System.String,System.String)">
+            <summary>
+            Try to Create a zip file with specified element.
+            </summary>
+            <param name="item">Element to compress.</param>
+            <param name="itemExtension">File elements extension.</param>
+            <param name="outputPath">Zip output path.</param>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> than contains zipped file.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.ByteArrayExtensions.TrySaveAsZip(System.Collections.Generic.IEnumerable{System.Byte[]},System.String,System.String)">
+            <summary>
+            Try to Create a zip file with specified elements.
+            </summary>
+            <param name="items">Element to compress.</param>
+            <param name="itemsExtension">File elements extension.</param>
+            <param name="outputPath">Zip output path.</param>
+            <returns>
+            A <see cref="T:System.String"/> than contains the path to created file.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.ByteArrayExtensions.ToZipStream(System.Byte[])">
+            <summary>
+            Returns a stream with with specified element compressed.
+            </summary>
+            <param name="item">Element to compress.</param>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> than contains zipped file.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.ByteArrayExtensions.ToZipStream(System.Collections.Generic.IEnumerable{System.Byte[]})">
+            <summary>
+            Returns a stream with with specified element compressed
+            </summary>
+            <param name="elements">Zip elements.</param>
+            <returns>
+            A <see cref="T:System.IO.Stream"/> than contains zipped file.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.Compression.StreamExtensions">
+            <summary>
+            Static class than contains common extension methods for objects of the namespace <see cref="T:System.IO.Stream"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.StreamExtensions.AsZipStream(System.IO.Stream,System.String)">
+            <summary>
+            Returns a <see cref="T:System.IO.Stream" /> which contains specified stream compressed. If <paramref name="name"/> is <b>null</b> (<b> Nothing </b> in Visual Basic) a random name will be used.
+            </summary>
+            <param name="target">Target to compress.</param>
+            <param name="name">Name of output <see cref="T:System.IO.Stream" />.</param>
+            <returns>
+            A <see cref="T:System.IO.Stream" /> which contains this stream compressed.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.StreamExtensions.AsZipStream(System.Collections.Generic.IEnumerable{System.IO.Stream},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Returns a <see cref="T:System.IO.Stream"/> which contains specified streams list compressed. The <paramref name="itemNames"/> contains the names for every stream entry in streams list.
+            </summary>
+            <param name="items">Elements to compress.</param>
+            <param name="itemNames">The names for every stream entry in streams list.</param>
+            <returns>
+            A <see cref="T:System.String" /> than contains the path to created file.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.StreamExtensions.SaveAsZip(System.IO.Stream,System.String,System.String)">
+            <summary>
+            Try saves a <see cref="T:System.IO.Stream" /> into a zip file. If <paramref name="filename"/> is <b>null</b> (<b>Nothing</b> in Visual Basic) a random name will be used.
+            </summary>
+            <param name="target">Target to saves as zipped.</param>
+            <param name="zipfileOutputPath">The zipfile output path.</param>
+            <param name="filename">The name of stream into zipfile.</param>
+            <returns>
+            <b>true</b> if zip compressed file has been created; <b>false</b> otherwise.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.StreamExtensions.SaveAsZip(System.Collections.Generic.IEnumerable{System.IO.Stream},System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Try saves a specified streams list compressed into a zip file.
+            </summary>
+            <param name="items">Target to saves as zipped.</param>
+            <param name="zipfileOutputPath">The zipfile output path.</param>
+            <param name="itemNames">The name of stream into zipfile.</param>
+            <returns>
+            <b>true</b> if zip compressed file has been created; <b>false</b> otherwise.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Compression.StreamExtensions.TrySaveAsZip(System.IO.Stream,System.String,System.String)">
+            <summary>
+            Returns a value indicating whether zip compressed file has been created.
+            </summary>
+            <param name="target">Target to compress.</param>
+            <param name="streamExtension">The stream extension.</param>
+            <param name="outputPath">The output path.</param>
+            <returns>
+            Operation result.
+            </returns>
+        </member>
+    </members>
+</doc>

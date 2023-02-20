@@ -1,0 +1,2221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iTin.Core.Drawing</name>
+    </assembly>
+    <members>
+        <member name="T:iTin.Core.Drawing.Canvas">
+            <summary>
+            Encapsulates a drawing surface with orientation support.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.#ctor(System.Drawing.Graphics)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Canvas"/> class.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.#ctor(System.Drawing.Graphics,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Canvas"/> class by setting the orientation.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.#ctor(System.Drawing.Graphics,System.Drawing.RectangleF)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Canvas"/> class by setting the drawing region in the specified rectangle
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the drawing region.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.#ctor(System.Drawing.Graphics,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Canvas"/> class by setting the orientation and drawing region in the specified rectangle.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the drawing region.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Canvas"/> class by setting the orientation and drawing region in the specified rectangle.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the drawing region.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:iTin.Core.Drawing.Canvas"/> class. Clean only unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Dispose">
+            <summary>
+            Free managed resources.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Drawing.Canvas.Graphics">
+            <summary>
+            Gets a reference to the drawing surface adapted to the indicated orientation.
+            </summary>
+            <value>
+            Surface <see cref="T: System.Drawing.Graphics" /> adapted an orientation in which to draw.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Drawing.Canvas.Orientation">
+            <summary>
+            Gets a value that represents the orientation of this drawing surface.
+            </summary>
+            <value>
+            One of the values in the enumeration <see cref = "T:iTin.Core.Drawing.Orientation" /> that represents the orientation.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Drawing.Canvas.Rectangle">
+            <summary>
+            Gets a <see cref="T:System.Drawing.Rectangle"/> structure that represents the drawing region.
+            </summary>
+            <value>
+            A <see cref="T:System.Drawing.Rectangle" /> structure that represents the drawing region.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Brush)">
+            <summary>
+            Draw the perimeter of a rectangle with the specified brush.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> that represents the brush to be used.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Brush,System.Drawing.RectangleF)">
+            <summary>
+            Draw the perimeter of a rectangle with the specified brush.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that represents the brush to be used.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Brush,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Draw the perimeter of a rectangle with the specified brush.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that represents the brush to be used.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+            <param name="quality">Representation quality to use in the Graphics object.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Color)">
+            <summary>
+            Draw the perimeter of a rectangle using a solid color.
+            </summary>
+            <param name="color">A <see cref="T:System.Drawing.Color"/> structure that represents the color of the rectangle.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Color,System.Drawing.RectangleF)">
+            <summary>
+            Draw the perimeter of a rectangle using a solid color.
+            </summary>
+            <param name="color">A <see cref="T:System.Drawing.Color"/> structure that represents the color of the rectangle.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Pen,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            Draw the perimeter of the figure with the default color and quality.
+            </summary>
+            <param name="pen">A <see cref="T:System.Drawing.Pen"/> reference that represents the pen to be used.</param>
+            <param name="shape">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> reference that represents the shape of the destination in which to paint.</param>
+            <remarks>
+            The rendering quality used to draw is <see cref="F:iTin.Core.Drawing.ComponentModel.SmoothingModeEx.HighQuality" />.
+            </remarks>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawBorder(System.Drawing.Pen,System.Drawing.Drawing2D.GraphicsPath,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Draw the perimeter of the figure with the specified color and quality.
+            </summary>
+            <param name="pen">A <see cref="T:System.Drawing.Pen"/> reference that represents the pen to be used.</param>
+            <param name="shape">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> reference that represents the shape of the destination in which to paint.</param>
+            <param name="quality">Representation quality to use in the Graphics object.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawImage(System.Drawing.Image,System.Drawing.ContentAlignment)">
+            <summary>
+            Draw an image at the specified position.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> reference that represents the image to be drawn.</param>
+            <param name="alignment">One of the values of <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawImage(System.Drawing.Image,System.Drawing.ContentAlignment,iTin.Core.Drawing.ComponentModel.EffectType)">
+            <summary>
+            Draw an image at the specified position.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> reference that represents the image to be drawn.</param>
+            <param name="alignment">One of the values of <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <param name="effect">One of the values of <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> that represents the type of effect to apply.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawImage(System.Drawing.Image,System.Drawing.ContentAlignment,System.String)">
+            <summary>
+            Draw an image at the specified position.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> reference that represents the image to be drawn.</param>
+            <param name="alignment">One of the values of <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <param name="borderColor">Defines the color of the image border.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawImage(System.Drawing.Image,System.Drawing.ContentAlignment,System.String,iTin.Core.Drawing.ComponentModel.EffectType)">
+            <summary>
+            Draw an image by applying an effect at the specified position.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> reference that represents the image to be drawn.</param>
+            <param name="alignment">One of the values of <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <param name="borderColor">Defines the color of the image border.</param>
+            <param name="effect">One of the values of <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> that represents the type of effect to apply.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawImage(System.Drawing.Image,System.Drawing.Rectangle,System.Drawing.ContentAlignment,System.String,iTin.Core.Drawing.ComponentModel.EffectType)">
+            <summary>
+            Draw an image by applying an effect at the specified position.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> reference that represents the image to be drawn.</param>
+            <param name="rect">A <see cref="P:iTin.Core.Drawing.Canvas.Rectangle"/> structure that represents the rectangle in which to paint.</param>
+            <param name="alignment">One of the values of <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <param name="borderColor">Defines the color of the image border.</param>
+            <param name="effect">One of the values of <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> that represents the type of effect to apply.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawString(System.String,System.Drawing.Brush,System.Drawing.Font,System.Drawing.StringFormat,System.Drawing.Text.TextRenderingHint)">
+            <summary>
+            Draw a text string with the brush, quality, format and font specified.
+            </summary>
+            <param name="text">A <see cref="T:System.String"/> that represents the text to be drawn.</param>
+            <param name="brush">An object <see cref="T:System.Drawing.Brush"/> that represents the definition of available brushes.</param>
+            <param name="font">A <see cref="T:System.Drawing.Font"/> where the text will be displayed.</param>
+            <param name="format">An object <see cref="T:System.Drawing.StringFormat"/> that represents the format of the text.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:System.Drawing.Text.TextRenderingHint"/> indicating the rendering quality.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawString(System.String,System.Drawing.Rectangle,System.Drawing.Brush,System.Drawing.Font,System.Drawing.StringFormat,System.Drawing.Text.TextRenderingHint)">
+            <summary>
+            Draw a text string with the brush, quality, format and font specified.
+            </summary>
+            <param name="text">A <see cref="T:System.String"/> that represents the text to be drawn.</param>
+            <param name="rect">A <see cref="P:iTin.Core.Drawing.Canvas.Rectangle"/> structure that represents the rectangle in which to paint.</param>
+            <param name="brush">An object <see cref="T:System.Drawing.Brush"/> that represents the definition of available brushes.</param>
+            <param name="font">A <see cref="T:System.Drawing.Font"/> where the text will be displayed.</param>
+            <param name="format">An object <see cref="T:System.Drawing.StringFormat"/> that represents the format of the text.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:System.Drawing.Text.TextRenderingHint"/> indicating the rendering quality.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawString(System.String,System.Drawing.Brush,System.Drawing.Font,System.Drawing.PointF)">
+            <summary>
+            Draw a text string with the brush, quality, format and font specified.
+            </summary>
+            <param name="text">A <see cref="T:System.String"/> that represents the text to be drawn.</param>
+            <param name="brush">An object <see cref="T:System.Drawing.Brush"/> that represents the definition of available brushes.</param>
+            <param name="font">A <see cref="T:System.Drawing.Font"/> where the text will be displayed.</param>
+            <param name="point"><see cref="T:System.Drawing.PointF"/> structure that specifies the upper left corner of the drawn text.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawString(System.String,System.Drawing.Brush,System.Drawing.Font,System.Drawing.PointF,System.Drawing.Text.TextRenderingHint)">
+            <summary>
+            Draw a text string with the brush, quality, format and font specified.
+            </summary>
+            <param name="text">A <see cref="T:System.String"/> that represents the text to be drawn.</param>
+            <param name="brush">An object <see cref="T:System.Drawing.Brush"/> that represents the definition of available brushes.</param>
+            <param name="font">A <see cref="T:System.Drawing.Font"/> where the text will be displayed.</param>
+            <param name="point"><see cref="T:System.Drawing.PointF"/> structure that specifies the upper left corner of the drawn text.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:System.Drawing.Text.TextRenderingHint"/> indicating the rendering quality.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.DrawString(System.String,System.Drawing.Brush,System.Drawing.Font,System.Drawing.PointF,System.Drawing.StringFormat,System.Drawing.Text.TextRenderingHint)">
+            <summary>
+            Draw a text string with the brush, quality, format and font specified.
+            </summary>
+            <param name="text">A <see cref="T:System.String"/> that represents the text to be drawn.</param>
+            <param name="brush">An object <see cref="T:System.Drawing.Brush"/> that represents the definition of available brushes.</param>
+            <param name="font">A <see cref="T:System.Drawing.Font"/> where the text will be displayed.</param>
+            <param name="point"><see cref="T:System.Drawing.PointF"/> structure that specifies the upper left corner of the drawn text.</param>
+            <param name="format">An object <see cref="T:System.Drawing.StringFormat"/> that represents the format of the text.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:System.Drawing.Text.TextRenderingHint"/> indicating the rendering quality.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Brush)">
+            <summary>
+            Fill the inside of the specified rectangle.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that determines the characteristics of the padding.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Brush,System.Drawing.RectangleF)">
+            <summary>
+            Fill the inside of a rectangle specified by a <see cref="T:System.Drawing.RectangleF"/> structure.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that determines the characteristics of the padding.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle to be filled. </param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Brush,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Fill the inside of a rectangle specified by a <see cref="T:System.Drawing.RectangleF"/> structure.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that determines the characteristics of the padding.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle to be filled. </param>
+            <param name="quality">Representation quality to use in the Graphics object.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Brush,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            Fill the specified figure using the specified brush.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that determines the characteristics of the padding.</param>
+            <param name="shape">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> reference that represents the shape of the destination in which to paint.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Brush,System.Drawing.Drawing2D.GraphicsPath,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Fill the inside of a rectangle specified by a <see cref="T:System.Drawing.RectangleF"/> structure.
+            </summary>
+            <param name="brush">A <see cref="T:System.Drawing.Brush"/> reference that determines the characteristics of the padding.</param>
+            <param name="shape">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> reference that represents the shape of the destination in which to paint.</param>
+            <param name="quality">Representation quality to use in the Graphics object.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Color)">
+            <summary>
+            Fill the inside of a rectangle specified by a <see cref="T:System.Drawing.RectangleF"/> structure with a solid color.
+            </summary>
+            <param name="color">A <see cref="T:System.Drawing.Color"/> structure that represents the fill color.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Color,System.Drawing.RectangleF)">
+            <summary>
+            Fill the inside of a rectangle specified by a <see cref="T:System.Drawing.RectangleF"/> structure with a solid color.
+            </summary>
+            <param name="color">A <see cref="T:System.Drawing.Color"/> structure that represents the fill color.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle to be filled.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Fill(System.Drawing.Color,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            Fill in the specified figure using a solid color.
+            </summary>
+            <param name="color">A <see cref="T:System.Drawing.Color"/> structure that represents the fill color.</param>
+            <param name="shape">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> reference that represents the shape of the destination in which to paint.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.RectangleToClient(System.String,System.Drawing.Font,System.Drawing.StringFormat)">
+            <summary>
+            Calculate the size and location of the text, at the customer's coordinates.
+            </summary>
+            <param name="text">A <see cref="T:System.String"/> that represents the text to draw.</param>
+            <param name="font">Font of the text that shows the element.</param>
+            <param name="format">A <see cref="T:System.Drawing.StringFormat"/> que representa el formato del texto a dibujar.</param>
+            <returns>
+            Size and location of the rectangle of the text with respect to the client rectangle.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The format value is <b>null</b>.</exception>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.AlignInside(System.Drawing.Rectangle,System.Drawing.Size,System.Drawing.ContentAlignment,System.Drawing.Size,System.Drawing.ContentAlignment,System.Int32)">
+            <summary>
+            Calculate the size and location of the text, at the customer's coordinates.
+            </summary>
+            <param name="rect">The rect.</param>
+            <param name="text">The text.</param>
+            <param name="textAlignment">The text alignment.</param>
+            <param name="image">The image.</param>
+            <param name="imageAlignment">The image alignment.</param>
+            <param name="gap">The gap.</param>
+            <returns>
+            Size and location of the text rectangle with respect to the client rectangle.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            El valor de format es <strong>null</strong>.
+            </exception>
+        </member>
+        <member name="M:iTin.Core.Drawing.Canvas.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+        <member name="T:iTin.Core.Drawing.Clipping">
+            <summary>
+            Define graphic cropping by using a figure, a rectangle or a region.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(iTin.Core.Drawing.Canvas,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the figure to draw on.
+            </summary>
+            <param name="canvas">Surface <see cref="T:iTin.Core.Drawing.Canvas"/> oriented where you are going to draw.</param>
+            <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> which represents the destination figure in which to paint.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(iTin.Core.Drawing.Canvas,System.Drawing.Rectangle)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping rectangle.
+            </summary>
+            <param name="canvas">Surface <see cref="T:iTin.Core.Drawing.Canvas"/> oriented where you are going to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure that represents the rectangle of clipping.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(iTin.Core.Drawing.Canvas,System.Drawing.Region)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping region.
+            </summary>
+            <param name="canvas">Surface <see cref="T:iTin.Core.Drawing.Canvas"/> oriented where you are going to draw.</param>
+            <param name="region">A <see cref="T:System.Drawing.Region"/> which represents the region of clipping.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(iTin.Core.Drawing.Canvas,System.Drawing.Drawing2D.GraphicsPath,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the figure on which to draw and if excluded from clipping.
+            </summary>
+            <param name="canvas">Surface <see cref="T:iTin.Core.Drawing.Canvas"/> oriented where you are going to draw.</param>
+            <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> which represents the destination figure in which to paint.</param>
+            <param name="exclude"><b>true</b> if the figure is excluded in the clipping; otherwise <b>false</b>.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(iTin.Core.Drawing.Canvas,System.Drawing.Rectangle,System.Boolean)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping rectangle and if it is excluded.
+            </summary>
+            <param name="canvas">Surface <see cref="T:iTin.Core.Drawing.Canvas"/> oriented where you are going to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure that represents the rectangle of clipping.</param>
+            <param name="exclude"><b>true</b> if the figure is excluded in the clipping; otherwise <b>false</b>.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(iTin.Core.Drawing.Canvas,System.Drawing.Region,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping region and if it is excluded from clipping.
+            </summary>
+            <param name="canvas">Surface <see cref="T:iTin.Core.Drawing.Canvas"/> oriented where you are going to draw.</param>
+            <param name="region">A <see cref="T:System.Drawing.Region"/> which represents the region of clipping.</param>
+            <param name="exclude"><b>true</b> if the figure is excluded in the clipping; otherwise <b>false</b>.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(System.Drawing.Graphics,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:iTin.Core.Drawing.Clipping"/> estableciendo la figura en la que dibujar.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> which represents the destination figure in which to paint.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the cropping rectangle.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure that represents the rectangle of clipping.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(System.Drawing.Graphics,System.Drawing.Region)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping region.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="region">A <see cref="T:System.Drawing.Region"/> which represents the region of clipping.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(System.Drawing.Graphics,System.Drawing.Drawing2D.GraphicsPath,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the figure on which to draw and if excluded from clipping.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> which represents the destination figure in which to paint.</param>
+            <param name="exclude"><b>true</b> if the figure is excluded in the clipping; otherwise <b>false</b>.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping rectangle and if it is excluded.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure that represents the rectangle of clipping.</param>
+            <param name="exclude"><b>true</b> if the figure is excluded in the clipping; otherwise <b>false</b>.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.#ctor(System.Drawing.Graphics,System.Drawing.Region,System.Boolean)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.Clipping"/> class by setting the clipping region and if it is exluded.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="region">A <see cref="T:System.Drawing.Region"/> which represents the region of clipping.</param>
+            <param name="exclude"><b>true</b> if the figure is excluded in the clipping; otherwise <b>false</b>.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.Dispose">
+            <summary>
+            Free managed resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Clipping.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.AntiAlias">
+            <summary>
+            Sets the smoothing quality of lines and curves for the graphic context in <see cref="F:iTin.Core.Drawing.ComponentModel.SmoothingModeEx.HighQuality"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.AntiAlias.#ctor(System.Drawing.Graphics)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.AntiAlias"/> class by setting the smoothing quality to <see cref="F:iTin.Core.Drawing.ComponentModel.SmoothingModeEx.HighQuality"/>.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.EffectTypeConverter">
+            <summary>
+            Provides a type converter to convert objects of type <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType" /> to <see cref="T:System.String" />
+            and from <see cref="T:System.String" /> 'to' <see cref="T:iTin.Core.Drawing.KnownEffectType" />.
+            </summary>
+            <remarks>
+            This converter obtains the value by reflection from the attribute <see cref="T:iTin.Core.ComponentModel.EnumDescriptionAttribute" /> associated with
+            the type <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType" />.
+            </remarks>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.EffectTypeConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.EffectTypeConverter"/> class for type <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType" />.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.SmoothingModeExConverter">
+            <summary>
+            Provides a type converter to convert objects of type <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx" /> to <see cref="T:System.String" /> and from <see cref="T:System.String" /> to <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx" />.
+            </summary>
+            <remarks>
+            This converter obtains the value by reflection from the attribute <see cref="T:iTin.Core.EnumDescriptionAttribute" /> associated with the type <see cref="T: iTin.Core.Drawing.ComponentModel.SmoothingModeEx" />.
+            </remarks>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.SmoothingModeExConverter.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeExConverter"/> para el tipo <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx" />.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.DashStyleEx">
+            <summary>
+            Specifies the style of dashed lines drawn with a <see cref="T:System.Drawing.Pen"/> object.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.DashStyleEx.Solid">
+            <summary>
+            Specify a continuous line.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.DashStyleEx.Dash">
+            <summary>
+            Specifies a line consisting of hyphens.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.DashStyleEx.Dot">
+            <summary>
+            Specifies a line formed by points.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.DashStyleEx.DashDot">
+            <summary>
+            Specifies a line formed by a repeating hyphen and point model.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.DashStyleEx.DashDotDot">
+            <summary>
+            Specifies a line formed by a repeating hyphen, dot, and dot model.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.EffectType">
+            <summary>
+            Specifies effects applicable to an image
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.None">
+            <summary>
+            Specifies that the image is drawn without applying any effect.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.Disabled">
+            <summary>
+            Specifies that the image is drawn disabled.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.GrayScale">
+            <summary>
+            Specifies that the image is drawn in grayscale.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.GrayScaleRed">
+            <summary>
+            Specifies that the image is drawn in grayscale except red color.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.GrayScaleGreen">
+            <summary>
+            Specifies that the image is drawn in grayscale except green color.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.GrayScaleBlue">
+            <summary>
+            Specifies that the image is drawn in grayscale except blue color.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.Brightness">
+            <summary>
+            Specifies that the image is drawn with a little more brightness.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.MoreBrightness">
+            <summary>
+            Specifies that the image is drawn with much more brightness.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.Dark">
+            <summary>
+            Specifies that the image is drawn with a little less brightness.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.MoreDark">
+            <summary>
+            Specifies that the image is drawn with much less brightness.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent05">
+            <summary>
+            Specifies that the image is drawn with a level of 5 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent10">
+            <summary>
+            Specifies that the image is drawn with a level of 10 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent20">
+            <summary>
+            Specifies that the image is drawn with a level of 20 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent30">
+            <summary>
+            Specifies that the image is drawn with a level of 30 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent40">
+            <summary>
+            Specifies that the image is drawn with a level of 40 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent50">
+            <summary>
+            Specifies that the image is drawn with a level of 50 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent60">
+            <summary>
+            Specifies that the image is drawn with a level of 60 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent70">
+            <summary>
+            Specifies that the image is drawn with a level of 70 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent80">
+            <summary>
+            Specifies that the image is drawn with a level of 80 percent opacity.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.EffectType.OpacityPercent90">
+            <summary>
+            Specifies that the image is drawn with a level of 90 percent opacity.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.FlipMode">
+            <summary>
+            Specify the flip mode.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipMode.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipMode.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipMode.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipMode.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.FlipStyle">
+            <summary>
+            Specifies the orientation of a control on the drawing surface.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipStyle.None">
+            <summary>
+            Control is oriented to the left.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipStyle.X">
+            <summary>
+            Control is oriented to the top.
+            </summary>        
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipStyle.Y">
+            <summary>
+            Control is oriented to the right.
+            </summary>        
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.FlipStyle.XY">
+            <summary>
+            Control is oriented to the bottom.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation">
+            <summary>
+            Set the interpolation mode to <see cref="F:System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation.#ctor(System.Drawing.Graphics)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation"/> class by setting the interpolation mode to the value <see cref="F:System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic"/>.
+            </summary>
+            <param name="graphics">Objeto <see cref="T:System.Drawing.Graphics"/> utilizado para dibujar.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation"/> class. Clean only unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation.Dispose">
+            <summary>
+            Free managed resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.HighQualityGraphics">
+            <summary>
+            Set the smoothing quality of lines and curves for the graphic context in <see cref="T:iTin.Core.Drawing.ComponentModel.AntiAlias"/> and the interpolation mode in <see cref="T:iTin.Core.Drawing.ComponentModel.HighQualityBicubicInterpolation"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityGraphics.#ctor(System.Drawing.Graphics)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.HighQualityGraphics"/> class by setting the smoothing quality to <see cref="F:iTin.Core.Drawing.ComponentModel.SmoothingModeEx.HighQuality"/>.
+            </summary>
+            <param name="graphics">A <see cref="T:System.Drawing.Graphics"/> reference used to draw.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityGraphics.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.HighQualityGraphics"/> class. Clean only unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.HighQualityGraphics.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.IEffect">
+            <summary>
+            Interface IEffect
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.IEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated. 
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.ImageStyle">
+            <summary>
+            Specifies the alignment of the content on the drawing surface.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.TopLeft">
+            <summary>
+            The image is aligned vertically at the top and horizontally at the left.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.TopMiddle">
+            <summary>
+            The content is aligned vertically at the top and horizontally at the center.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.TopRight">
+            <summary>
+            The image is aligned vertically on the top and horizontally on the right.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.CenterLeft">
+            <summary>
+            The image is aligned vertically in the middle and horizontally to the left.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.CenterMiddle">
+            <summary>
+            The image is aligned vertically in the middle and horizontally in the center.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.CenterRight">
+            <summary>
+            The image is aligned vertically in the middle and horizontally to the right.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.BottomLeft">
+            <summary>
+            The image is aligned vertically on the bottom and horizontally on the left.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.BottomMiddle">
+            <summary>
+            The image is aligned vertically at the bottom and horizontally at the center.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.BottomRight">
+            <summary>
+            The image is aligned vertically on the bottom and horizontally on the right.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.Stretch">
+            <summary>
+            The image extends across the surface of the control's client rectangle.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.Tile">
+            <summary>
+            Tile the image.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.TileFlipX">
+            <summary>
+            Invert the image horizontally, and then tile it.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.TileFlipXY">
+            <summary>
+            Invert the image horizontally and vertically, and then tile it.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.ImageStyle.TileFlipY">
+            <summary>
+            Invert the image vertically, and then tile it.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.Orientation">
+            <summary>
+            Specifies the orientation of an element with respect to the drawing surface.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.Orientation.Left">
+            <summary>
+            The control is oriented to the left.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.Orientation.Top">
+            <summary>
+            The control is oriented at the top.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.Orientation.Right">
+            <summary>
+            The control is oriented to the right.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.Orientation.Bottom">
+            <summary>
+            The control is oriented at the bottom.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.OutsideAlignment">
+            <summary>
+            Defines outside alignment values
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.TopLeftCorner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.TopLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.TopCenter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.TopRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.TopRightCorner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.MiddleRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.BottomRightCorner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.BottomRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.BottomCenter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.BottomLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.BottomLeftCorner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.OutsideAlignment.MiddleLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.Smoothing">
+            <summary>
+            Sets the smoothing quality of lines and curves for the graphic context specified in one of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.Smoothing.#ctor(iTin.Core.Drawing.Canvas,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Initialize a new instance of the class <see cref="T:iTin.Core.Drawing.ComponentModel.Smoothing"/> by setting the smoothing quality of the lines.
+            </summary>
+            <param name="canvas">Surface <see cref="T:System.Drawing.Graphics"/> oriented on which to draw.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx"/> that represents the smoothing quality of the lines.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.Smoothing.#ctor(System.Drawing.Graphics,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Initialize a new instance of the class <see cref="T:iTin.Core.Drawing.ComponentModel.Smoothing"/> by setting the smoothing quality of the lines.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> oriented on which to draw</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx"/> that represents the smoothing quality of the lines.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.Smoothing.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.Smoothing"/> class. Clean only unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.Smoothing.Dispose">
+            <summary>
+            Free managed resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.Smoothing.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx">
+            <summary>
+            Specifies whether the lines and curves and edges of the filled areas are smoothed.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.SmoothingModeEx.HighSpeed">
+            <summary>
+            Specifies that the lines are not smoothed.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.Drawing.ComponentModel.SmoothingModeEx.HighQuality">
+            <summary>
+            Specify a representation with smoothed lines.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.ComponentModel.TextRendering">
+            <summary>
+            Sets the quality of text rendering indicating one of the enumeration values <see cref="T:System.Drawing.Text.TextRenderingHint"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.TextRendering.#ctor(System.Drawing.Graphics,System.Drawing.Text.TextRenderingHint)">
+            <summary>
+            Initialize a new instance of the class <see cref="T:iTin.Core.Drawing.ComponentModel.TextRendering"/> establishing the smoothing quality of the lines.
+            </summary>
+            <param name="graphics">A <see cref="T:System.Drawing.Graphics" /> reference used to draw.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:System.Drawing.Text.TextRenderingHint" /> that represents the rendering quality of the text.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.TextRendering.Dispose">
+            <summary>
+            Clean resources.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.TextRendering.Dispose(System.Boolean)">
+            <summary>
+            Cleans managed and unmanaged resources.
+            </summary>
+            <param name="disposing">
+            If it is <b>true</b>, the method is invoked directly or indirectly from the user code.
+            If it is <b>false</b>, the method is called the finalizer and only unmanaged resources are finalized.
+            </param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ComponentModel.TextRendering.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:iTin.Core.Drawing.ComponentModel.TextRendering"/> class.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.BrightnessEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents brightness effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.BrightnessEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.DarkEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents dark effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.DarkEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.DisabledEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents disabled effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.DisabledEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.GrayScaleBlueEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents gray-scale blue effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.GrayScaleBlueEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.GrayScaleEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents gray-scale effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.GrayScaleEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.GrayScaleGreenEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents gray-scale green effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.GrayScaleGreenEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.GrayScaleRedEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents gray-scale red effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.GrayScaleRedEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.MoreBrightnessEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents more brightness effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.MoreBrightnessEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.MoreDarkEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents more dark effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.MoreDarkEffect.Apply">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Effects.OpacityEffect">
+            <summary>
+            A Specialization of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> interface.<br/>
+            Which represents opacity effect.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.OpacityEffect.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Effects.OpacityEffect"/> class.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Drawing.Effects.OpacityEffect.PercentValue">
+            <summary>
+            Gets or sets opacity value expressed as value between 0 and 100 
+            </summary>
+            <value>
+            A <see cref="T:System.Single"/> that represents the opacity value.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Drawing.Effects.OpacityEffect.Apply">
+            <summary>
+            Applies this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> that represents this effect.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Exceptions.Exception">
+            <summary>
+            Class Exception.
+            </summary>
+            <seealso cref="T:System.Exception"/>
+        </member>
+        <member name="M:iTin.Core.Drawing.Exceptions.Exception.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Exceptions.Exception"/> class.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Exceptions.Exception.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Exceptions.Exception"/> class.
+            </summary>
+            <param name="code">The code.</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.Exceptions.Exception.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:iTin.Core.Drawing.Exceptions.Exception"/> class.
+            </summary>
+            <param name="resourceFile">The resource file.</param>
+            <param name="resourceKey">The resource key.</param>
+        </member>
+        <member name="P:iTin.Core.Drawing.Exceptions.Exception.ResourceKey">
+            <summary>
+            Gets or sets the resource key.
+            </summary>
+            <value>
+            The resource key.
+            </value>
+        </member>
+        <member name="P:iTin.Core.Drawing.Exceptions.Exception.ResourceFile">
+            <summary>
+            Gets or sets the resource file.
+            </summary>
+            <value>The resource file.</value>
+        </member>
+        <member name="P:iTin.Core.Drawing.Exceptions.Exception.Message">
+            <summary>
+            Obtiene un mensaje que describe la excepción actual.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="M:iTin.Core.Drawing.Exceptions.Exception.GetMessage">
+            <summary>
+            Gets the message.
+            </summary>
+            <returns>
+            System.String.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Exceptions.Exception.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="language">The language.</param>
+            <returns>
+            System.String.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.AssemblyExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.Reflection.Assembly"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.AssemblyExtensions.GetImageResource(System.Reflection.Assembly,System.String)">
+            <summary>
+            Gets an image from assembly resources.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <param name="name">Resource name.</param>
+            <returns>
+            A <see cref="T:System.Drawing.Image"/> that contains the image resource.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.ColorExtensions">
+            <summary>
+            Static class than contains extension methods for structures of type <see cref="T:System.Drawing.Color"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.ColorExtensions.ToHex(System.Drawing.Color)">
+            <summary>
+            Gets the hexadecimal encoding of a color.
+            </summary>
+            <param name="value">color to convert.</param>
+            <returns>
+            An hexadecimal <see cref="T:System.String"/> than represents the color.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.ContentAlignmentExtensions">
+            <summary>
+            Static class than contains extension methods for structures of type <see cref="T:System.Drawing.ContentAlignment"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.ContentAlignmentExtensions.ToImageStyle(System.Drawing.ContentAlignment)">
+            <summary>
+            Equivalence between the types <see cref="T:System.Drawing.ContentAlignment" /> and <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/>.
+            </summary>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <returns>
+            Equivalent style.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ContentAlignmentExtensions.ToHorizontalAlignment(System.Drawing.ContentAlignment)">
+            <summary>
+            Equivalence of the horizontal component of the type <see cref="T:System.Drawing.ContentAlignment"/> and <see cref="T:System.Drawing.StringAlignment"/>.
+            </summary>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <returns>
+            Equivalent style of the horizontal component.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ContentAlignmentExtensions.ToStringVerticalAlignment(System.Drawing.ContentAlignment)">
+            <summary>
+            Equivalence of the vertical component of the type <see cref="T:System.Drawing.ContentAlignment"/> and <see cref="T:System.Drawing.StringAlignment"/>.
+            </summary>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <returns>
+            Equivalent style of the vertical component.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.DashStyleExExtensions">
+            <summary>
+            Static class than contains extension methods for type <see cref="T:iTin.Core.Drawing.ComponentModel.DashStyleEx"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.DashStyleExExtensions.ToDashStyle(iTin.Core.Drawing.ComponentModel.DashStyleEx)">
+            <summary>
+            Equivalence between the types <see cref="T:iTin.Core.Drawing.ComponentModel.DashStyleEx"/> and <see cref="T:System.Drawing.Drawing2D.DashStyle"/>.
+            </summary>
+            <param name="style">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.DashStyleEx"/> that represents style of dashed lines.</param>
+            <returns>
+            Equivalent value.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.GraphicsExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.Drawing.Graphics"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.GraphicsExtensions.ToOrientation(System.Drawing.Graphics,System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a brush to draw from a reference image specifying the orientation, quality, style and effect.
+            </summary>
+            <param name="graphics">Surface <see cref="T:System.Drawing.Graphics"/> on which to draw.</param>
+            <param name="rect">Structure <see cref="T:System.Drawing.RectangleF"/> that represents the rectangle to paint on.</param>
+            <param name="orientation">One of the enumeration values <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation of the brush. </param>
+            <returns>
+            Returns a <see cref="T:System.Drawing.Brush"/> object that represents the drawing brush.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The value of image is <b>null</b>.</exception>
+        </member>
+        <member name="T:iTin.Core.Drawing.ImageExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.Drawing.Image"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.AdjustBrightness(System.Drawing.Image,System.Int32)">
+            <summary>
+            Adjusts the brightness of <see cref="T:System.Drawing.Image"/>.
+            </summary>
+            <param name="source">Image source.</param>
+            <param name="brightness">The brightness.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Image"/>
+            </returns>        
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ApplyEffect(System.Drawing.Image,iTin.Core.Drawing.ComponentModel.IEffect)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Image"/> with the specified effect.
+            </summary>
+            <param name="image">Image object to which the effect is applied.</param>
+            <param name="effect">Effect type.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Image"/>, result of applying the effect to specified image .
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ApplyEffect(System.Drawing.Image,iTin.Core.Drawing.ComponentModel.EffectType)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Image"/> with the specified effect.
+            </summary>
+            <param name="image">Image object to which the effect is applied.</param>
+            <param name="effect">Effect type.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Image"/>, result of applying the effect to specified image .
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ApplyEffects(System.Drawing.Image,iTin.Core.Drawing.ComponentModel.IEffect[])">
+            <summary>
+            Returns a new Image with the specified effects.
+            </summary>
+            <param name="image">Image object to which the effect is applied.</param>
+            <param name="effects">Array of <see cref="T:iTin.Core.Drawing.ComponentModel.IEffect"/> with different effects to apply.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Image"/>, result of applying the effects to specified image .
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ApplyEffects(System.Drawing.Image,iTin.Core.Drawing.ComponentModel.EffectType[])">
+            <summary>
+            Returns a new Image with the specified effects.
+            </summary>
+            <param name="image">Image object to which the effect is applied.</param>
+            <param name="effects">Array of <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> with different effects to apply.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Image"/>, result of applying the effects to specified image .
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.AsByteArray(System.Drawing.Image)">
+            <summary>
+            Converts an <see cref="T:System.Drawing.Image"/> as png into byte array.
+            </summary>
+            <param name="image">Image to convert.</param>
+            <returns>
+            Byte array.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.AsByteArray(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Converts an <see cref="T:System.Drawing.Image" /> into byte array.
+            </summary>
+            <param name="image">Image to convert.</param>
+            <param name="format">The format.</param>
+            <returns>
+            Byte array.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.AsStream(System.Drawing.Image)">
+            <summary>
+            Returns a <see cref="T:System.IO.Stream"/> which represents the input <see cref="T:System.Drawing.Image"/> as png image format.
+            </summary>
+            <param name="image">Image to convert.</param>
+            <returns>
+            Stream.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.AsStream(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Returns a <see cref="T:System.IO.Stream"/> which represents the input <see cref="T:System.Drawing.Image"/> with specified image format.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="format">The format.</param>
+            <returns>
+            Stream.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.Flip(System.Drawing.Image,iTin.Core.Drawing.ComponentModel.FlipStyle)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Image"/> rotated by the specified orientation.
+            </summary>
+            <param name="image"><see cref="T:System.Drawing.Image"/> to be rotated.</param>
+            <param name="style">New orientation.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Image"/> rotated by the specified orientation..
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.Rotate(System.Drawing.Image,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Image"/> rotated according to the specified orientation.
+            </summary>
+            <param name="image">A <see cref="T:System.Drawing.Image"/> to be rotated.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation.</param>
+            <returns>
+            An object <see cref="T:System.Drawing.Image"/> rotated according to the specified orientation.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ScalePercent(System.Drawing.Image,System.Single)">
+            <summary>
+            Returns a new scaled <see cref="T:System.Drawing.Image"/> to a certain percentage
+            </summary>
+            <param name="image">Image to scale</param>
+            <param name="percent">the scaling percentage</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ScalePercent(System.Drawing.Image,System.Drawing.SizeF)">
+            <summary>
+            Returns a new scaled <see cref="T:System.Drawing.Image"/> to a certain percentage
+            </summary>
+            <param name="image">Image to scale</param>
+            <param name="size">the scaling percentage of the width and height</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ScalePercent(System.Drawing.Image,System.Single,System.Single)">
+            <summary>
+            Returns a new scaled <see cref="T:System.Drawing.Image"/> to a certain percentage
+            </summary>
+            <param name="image">Image to scale</param>
+            <param name="percentX">the scaling percentage of the width</param>
+            <param name="percentY">the scaling percentage of the height</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ScaleToFit(System.Drawing.Image,System.Single)">
+            <summary>
+            Returns a new scaled <see cref="T:System.Drawing.Image"/> so that it fits a certain width and height.
+            </summary>
+            <param name="image">Image to scale</param>
+            <param name="percent">the scaling percentage</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ScaleToFit(System.Drawing.Image,System.Drawing.SizeF)">
+            <summary>
+            Returns a new scaled <see cref="T:System.Drawing.Image"/> so that it fits a certain width and height.
+            </summary>
+            <param name="image">Image to scale</param>
+            <param name="size">the width to fit</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ScaleToFit(System.Drawing.Image,System.Single,System.Single)">
+            <summary>
+            Returns a new scaled <see cref="T:System.Drawing.Image"/> so that it fits a certain width and height.
+            </summary>
+            <param name="image">Image to scale</param>
+            <param name="width">the width to fit</param>
+            <param name="height">the width to fit</param>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBase64(System.Drawing.Image)">
+            <summary>
+            Converts an <see cref="T:System.Drawing.Image"/> as png into a base64 string 
+            </summary>
+            <param name="image">Image to convert</param>
+            <returns>
+            A <see cref="T:System.String"/> which represents an <see cref="T:System.Drawing.Image"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBase64(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Converts an <see cref="T:System.Drawing.Image"/> into a base64 string 
+            </summary>
+            <param name="image">Image to convert</param>
+            <param name="format">The image format.</param>
+            <returns>
+            A <see cref="T:System.String"/> which represents an <see cref="T:System.Drawing.Image"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBrush(System.Drawing.Image,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.ImageStyle)">
+            <summary>
+            Returns a drawing <see cref="T:System.Drawing.Brush"/> oriented vertically upwards from a reference image without applying an effect specifying the style.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> base object to create the drawing brush.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+            <param name="style">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> that represents image style.</param>
+            <returns>
+            Returns a <see cref="T:System.Drawing.Brush"/> object reference that represents the drawing brush.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBrush(System.Drawing.Image,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.ImageStyle,iTin.Core.Drawing.ComponentModel.EffectType)">
+            <summary>
+            Returns a drawing <see cref="T:System.Drawing.Brush"/> oriented vertically upwards from a reference image specifying a style and an effect.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> base object to create the drawing brush.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+            <param name="style">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> that represents image style.</param>
+            <param name="effect">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> that represents the type of effect to be applied.</param>
+            <returns>
+            Returns a <see cref="T:System.Drawing.Brush"/> object reference that represents the drawing brush.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBrush(System.Drawing.Image,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.ImageStyle,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a <see cref="T:System.Drawing.Brush"/> to draw from a reference image specifying the orientation and style.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> base object to create the drawing brush.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+            <param name="style">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> that represents image style.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation of the brush.</param>
+            <returns>
+            Returns a <see cref="T:System.Drawing.Brush"/> object reference that represents the drawing brush.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBrush(System.Drawing.Image,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.ImageStyle,iTin.Core.Drawing.ComponentModel.EffectType,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a <see cref="T:System.Drawing.Brush"/> to draw from a reference image specifying the orientation, style and effect.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> base object to create the drawing brush.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+            <param name="style">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> that represents image style.</param>
+            <param name="effect">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> that represents the type of effect to be applied.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation of the brush.</param>
+            <returns>
+            Returns a <see cref="T:System.Drawing.Brush"/> object reference that represents the drawing brush.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageExtensions.ToBrush(System.Drawing.Image,System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.ImageStyle,iTin.Core.Drawing.ComponentModel.EffectType,iTin.Core.Drawing.ComponentModel.Orientation,iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Returns a <see cref="T:System.Drawing.Brush"/> to draw from a reference image specifying the orientation, quality, style and effect.
+            </summary>
+            <param name="image">An <see cref="T:System.Drawing.Image"/> base object to create the drawing brush.</param>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the rectangle in which to paint.</param>
+            <param name="style">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> that represents image style.</param>
+            <param name="effect">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.EffectType"/> that represents the type of effect to be applied.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation of the brush.</param>
+            <param name="quality">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx"/> that represents the quality of presentation</param>
+            <returns>
+            Returns a <see cref="T:System.Drawing.Brush"/> object reference that represents the drawing brush.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.ImageStyleExtensions">
+            <summary>
+            Static class than contains extension methods for structures of type <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.ImageStyleExtensions.ToWrapMode(iTin.Core.Drawing.ComponentModel.ImageStyle)">
+            <summary>
+            Equivalence between the types <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> and <see cref="T:System.Drawing.Drawing2D.WrapMode"/>.
+            </summary>
+            <param name="style">One of the values of the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.ImageStyle"/> that represents the alignment of the images on the surface of the control.</param>
+            <returns>
+            Equivalent style
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.OrientationExtensions">
+            <summary>
+            Static class than contains extension methods for type <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.OrientationExtensions.IsVerticalOrientation(iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a value that indicates whether the orientation is vertical.
+            </summary>
+            <param name="orientation">Orientation to check</param>
+            <returns>
+            <b>true</b> if orientation is vertical; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.OrientationExtensions.ToAngle(iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Gets the angle of rotation in degrees for the specified orientation.
+            </summary>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the orientation of the brush.</param>
+            <returns>
+            Angle of rotation in degrees for the specified orientation.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.RectangleExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.Drawing.Rectangle"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.AlignInside(System.Drawing.Rectangle,System.Drawing.ContentAlignment,System.Drawing.Rectangle)">
+            <summary>
+            Align the structure <see cref="T:System.Drawing.Rectangle"/> inside the target rectangle.
+            </summary>
+            <param name="rect">Structure <see cref="T:System.Drawing.Rectangle"/> to be aligned.</param>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <param name="destRect">Structure <see cref="T:System.Drawing.Rectangle"/> where it will be aligned.</param>
+            <returns>
+            Structure <see cref="T:System.Drawing.Rectangle"/> that represents the destination rectangle that contains the aligned element.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.AlignOutside(System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.OutsideAlignment,System.Drawing.Rectangle)">
+            <summary>
+            Align the <see cref="T:System.Drawing.Rectangle"/> structure on the outside of the destination <see cref="T:System.Drawing.Rectangle"/>.
+            </summary>
+            <param name="rect">Structure <see cref="T:System.Drawing.Rectangle"/> to be aligned.</param>
+            <param name="alignment">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.OutsideAlignment"/> that represents the type of alignment.</param>
+            <param name="destRect">Structure <see cref="T:System.Drawing.Rectangle"/> where it will be aligned.</param>
+            <returns>
+            A <see cref="T:System.Drawing.Rectangle"/> structure that represents the destination rectangle that contains the aligned element.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.AreValid(System.Collections.Generic.IEnumerable{System.Drawing.Rectangle})">
+            <summary>
+            Check if the properties <see cref="P:System.Drawing.Rectangle.Width" /> and <see cref="P:System.Drawing.Rectangle.Height" /> of all elements have values greater than zero.
+            </summary>
+            <param name="rectangles">Lista de <see cref="T:System.Drawing.Rectangle"/> a comprobar.</param>
+            <returns>
+            <b>true</b> if all <see cref="P:System.Drawing.Rectangle.Width"/> and <see cref="P:System.Drawing.Rectangle.Height"/> properties values are greater than zero; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.DeflateInOne(System.Drawing.Rectangle)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Rectangle"/> structure decreased by one unit.
+            </summary>
+            <param name="rect">Structure <see cref="T:System.Drawing.Rectangle"/> to decrease.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Rectangle"/> structure result of decreasing this structure by one unit.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.DrawCenterLine(System.Drawing.Rectangle,System.Drawing.Graphics,System.Drawing.Color,iTin.Core.Drawing.ComponentModel.DashStyleEx,System.Int32)">
+            <summary>
+            Draw a centered line inside a rectangle with a specified color and style.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.Rectangle"/> structure that represents the source rectangle.</param>
+            <param name="graphics">A <see cref="T:System.Drawing.Graphics"/> object used to draw.</param>
+            <param name="color">Line color.</param>
+            <param name="style">A value of the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.DashStyleEx"/> that represents the style of the line</param>
+            <param name="width">Thickness of the line</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="graphics"/> is <b>null</b>.</exception>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.Flip(System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.FlipMode)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Rectangle"/> structure flipped in the specified direction.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure that represents the source rectangle to be flipped.</param>
+            <param name="flipMode">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.FlipMode"/> that represents the type of flip.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Rectangle"/> structure flipped in the specified direction.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.InflateInOne(System.Drawing.Rectangle)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Rectangle"/> structure increased by one unit.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure to increase</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Rectangle"/> structure result of increasing this structure by one unit.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.IsValid(System.Drawing.Rectangle)">
+            <summary>
+            Check if the <see cref="P:System.Drawing.Rectangle.Width"/> and <see cref="P:System.Drawing.Rectangle.Height"/> properties of this <see cref="T:System.Drawing.Rectangle"/> structure have values greater than zero.
+            </summary>
+            <param name="rect">Estructura <see cref="T:System.Drawing.Rectangle"/> que representa el rectángulo origen.</param>
+            <returns>
+            <b>true</b> if <see cref="P:System.Drawing.Rectangle.Width"/> and <see cref="P:System.Drawing.Rectangle.Height"/> properties values are greater than zero; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.ModifyByLTRB(System.Drawing.Rectangle,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Modify the specified rectangle with the indicated values.
+            </summary>
+            <param name="rect">Rectangle to modify</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+            <param name="right">Right value</param>
+            <param name="bottom">Bottom value</param>
+            <returns>
+            A <see cref="T:System.Drawing.Rectangle"/> modified.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.ModifyByLTRB(System.Drawing.Rectangle,System.Int32,System.Int32,System.Int32,System.Int32,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Modify the specified rectangle with the indicated values and its orientation.
+            </summary>
+            <param name="rect">Rectangle to modify</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+            <param name="right">Right value</param>
+            <param name="bottom">Bottom value</param>
+            <param name="orientation">Orientation value</param>
+            <returns>
+            A <see cref="T:System.Drawing.Rectangle"/> modified.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.MoveAndAlignWith(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.ContentAlignment)">
+            <summary>
+            Returns a <see cref="T:System.Drawing.Rectangle"/> structure aligned with the specified structure.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure to align.</param>
+            <param name="reference">A <see cref="T:System.Drawing.Rectangle"/> structure reference.</param>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment to apply.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure aligned with the reference rectangle.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.Rotate(System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Rectangle"/> structure rotated in the specified direction.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.Rectangle"/> structure that represents the source rectangle.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the type of orientation.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Rectangle"/> structure rotated in the specified direction.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.Scale(System.Drawing.Rectangle,System.Single,System.Single)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.RectangleF"/> structure scaled in the specified horizontal and vertical proportions.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.Rectangle"/> structure that represents the origin rectangle to scale.</param>
+            <param name="xScale">Scale factor on the horizontal axis.</param>
+            <param name="yScale">Scale factor on the vertical axis.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure which represents the scaled origin rectangle in the specified proportions.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.Split(System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a one-dimensional zero-based matrix that contains two equal <see cref="T:System.Drawing.RectangleF"/> elements.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.Rectangle"/> structure that represents the source rectangle.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the type of orientation.</param>
+            <returns>
+            A new matrix of <see cref="T:System.Drawing.RectangleF"/> structures equals.
+            If the diemsiones of the source rectangle are not valid, <b>Split</b> returns an array of a single element that contains the source rectangle.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleExtensions.Split(System.Drawing.Rectangle,iTin.Core.Drawing.ComponentModel.Orientation,System.Single)">
+            <summary>
+            Returns a one-dimensional zero-based matrix that contains two <see cref="T:System.Drawing.RectangleF"/> elements.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.Rectangle" /> structure that represents the source rectangle.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the type of orientation.</param>
+            <param name="lenghtPercent">Value in percentage of the length of the first rectangle.</param>
+            <returns>
+            A new matrix of <see cref="T:System.Drawing.RectangleF"/> structures.
+            If the diemsiones of the source rectangle are not valid, <b>Split</b> returns an array of a single element that contains the source rectangle.
+            </returns>
+            <remarks>
+            The first element of the matrix is always the result of applying the criteria of orientation and length.
+            </remarks>
+        </member>
+        <member name="T:iTin.Core.Drawing.RectangleFExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.Drawing.RectangleF"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.AreValid(System.Collections.Generic.IEnumerable{System.Drawing.RectangleF})">
+            <summary>
+            Check if the properties <see cref="P:System.Drawing.RectangleF.Width"/> and <see cref="P:System.Drawing.RectangleF.Height"/> of all elements have values greater than zero.
+            </summary>
+            <param name="rectangles">Lista de <see cref="T:System.Drawing.RectangleF"/> a comprobar.</param>
+            <returns>
+            <b>true</b> if all <see cref="P:System.Drawing.RectangleF.Width"/> and <see cref="P:System.Drawing.RectangleF.Height"/> properties values are greater than zero; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.DeflateInOne(System.Drawing.RectangleF)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.RectangleF"/> structure decreased by one unit.
+            </summary>
+            <param name="rect">Structure <see cref="T:System.Drawing.RectangleF"/> to decrease.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure result of decreasing this structure by one unit.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.DeflateInOne(System.Collections.Generic.IEnumerable{System.Drawing.RectangleF})">
+            <summary>
+            Returns a zero-dimensional unidimensional matrix containing the deflated <see cref="T:System.Drawing.RectangleF"/> elements in a unit.
+            </summary>
+            <param name="rects">The rects.</param>
+            <returns>
+            Structure matrix <see cref="T:System.Drawing.RectangleF"/>
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.DrawCenterLine(System.Drawing.RectangleF,System.Drawing.Graphics,System.Drawing.Color,iTin.Core.Drawing.ComponentModel.DashStyleEx,System.Int32)">
+            <summary>
+            Draw a centered line inside a rectangle with a specified color and style.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.RectangleF"/> structure that represents the source rectangle.</param>
+            <param name="graphics">A <see cref="T:System.Drawing.Graphics"/> object used to draw.</param>
+            <param name="color">Line color.</param>
+            <param name="style">A value of the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.DashStyleEx"/> that represents the style of the line</param>
+            <param name="width">Thickness of the line</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="graphics"/> is <b>null</b>.</exception>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.Flip(System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.FlipMode)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.RectangleF"/>structure  flipped in the specified direction.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the source rectangle to be flipped.</param>
+            <param name="flipMode">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.FlipMode"/> that represents the type of flip.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure flipped in the specified direction.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.InflateInOne(System.Drawing.RectangleF)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.RectangleF"/> structure increased by one unit.
+            </summary>
+            <param name="rect">A <see cref= "T:System.Drawing.RectangleF"/> structure to increase</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure result of increasing this structure by one unit.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.IsValid(System.Drawing.RectangleF)">
+            <summary>
+            Check if the <see cref="P:System.Drawing.RectangleF.Width"/> and <see cref="P:System.Drawing.RectangleF.Height"/> properties of this <see cref="T:System.Drawing.RectangleF"/> structure have values greater than zero.
+            </summary>
+            <param name="rect">Estructura <see cref="T:System.Drawing.RectangleF"/> que representa el rectángulo origen.</param>
+            <returns>
+            <b>true</b> if <see cref="P:System.Drawing.RectangleF.Width"/> and <see cref="P:System.Drawing.RectangleF.Height"/> properties values are greater than zero; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.ModifyByLTRB(System.Drawing.RectangleF,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Modify the specified rectangle with the indicated values.
+            </summary>
+            <param name="rect">Rectangle to modify</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+            <param name="right">Right value</param>
+            <param name="bottom">Bottom value</param>
+            <returns>
+            A <see cref="T:System.Drawing.RectangleF"/> modified.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.ModifyByLTRB(System.Drawing.RectangleF,System.Int32,System.Int32,System.Int32,System.Int32,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Modify the specified rectangle with the indicated values and its orientation.
+            </summary>
+            <param name="rect">Rectangle to modify</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+            <param name="right">Right value</param>
+            <param name="bottom">Bottom value</param>
+            <param name="orientation">Orientation value</param>
+            <returns>
+            A <see cref="T:System.Drawing.RectangleF"/> modified.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.MoveAndAlignWith(System.Drawing.RectangleF,System.Drawing.RectangleF,System.Drawing.ContentAlignment)">
+            <summary>
+            Returns a <see cref="T:System.Drawing.RectangleF"/> structure aligned with the specified structure.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure to align.</param>
+            <param name="reference">A <see cref="T:System.Drawing.RectangleF"/> structure reference.</param>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment to apply.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure aligned with the reference rectangle.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.Rotate(System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.RectangleF"/> structure rotated in the specified direction.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.RectangleF"/> structure that represents the source rectangle.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the type of orientation.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure rotated in the specified direction.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.Scale(System.Drawing.RectangleF,System.Single,System.Single)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.RectangleF"/> structure scaled in the specified horizontal and vertical proportions.
+            </summary>
+            <param name="rect">A <see cref="T:System.Drawing.RectangleF"/> structure that represents the origin rectangle to scale.</param>
+            <param name="xScale">Scale factor on the horizontal axis.</param>
+            <param name="yScale">Scale factor on the vertical axis.</param>
+            <returns>
+            A new <see cref="T:System.Drawing.RectangleF"/> structure which represents the scaled origin rectangle in the specified proportions.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.Split(System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.Orientation)">
+            <summary>
+            Returns a one-dimensional zero-based matrix that contains two equal <see cref="T:System.Drawing.RectangleF"/> elements.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.Rectangle"/> structure that represents the source rectangle.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation" /> that represents the type of orientation.</param>
+            <returns>
+            A new matrix of <see cref="T:System.Drawing.RectangleF"/> structures equals.
+            If the diemsiones of the source rectangle are not valid, <b>Split</b> returns an array of a single element that contains the source rectangle.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.RectangleFExtensions.Split(System.Drawing.RectangleF,iTin.Core.Drawing.ComponentModel.Orientation,System.Single)">
+            <summary>
+            Returns a one-dimensional zero-based matrix that contains two <see cref="T:System.Drawing.RectangleF"/> elements.
+            </summary>
+            <param name="rect"><see cref="T:System.Drawing.Rectangle"/> structure that represents the source rectangle.</param>
+            <param name="orientation">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.Orientation"/> that represents the type of orientation.</param>
+            <param name="lenghtPercent">Value in percentage of the length of the first rectangle.</param>
+            <returns>
+            A new matrix of <see cref="T:System.Drawing.RectangleF"/> structures.
+            If the diemsiones of the source rectangle are not valid, <b>Split</b> returns an array of a single element that contains the source rectangle.
+            </returns>
+            <remarks>
+            The first element of the matrix is always the result of applying the criteria of orientation and length.
+            </remarks>
+        </member>
+        <member name="T:iTin.Core.Drawing.SizeExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.Drawing.Size"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.SizeExtensions.AlignInside(System.Drawing.Size,System.Drawing.ContentAlignment,System.Drawing.Rectangle)">
+            <summary>
+            Align the <see cref="T:System.Drawing.Size"/> structure inside the target rectangle.
+            </summary>
+            <param name="size">Structure <see cref="T:System.Drawing.Size"/> to be aligned.</param>
+            <param name="alignment">One of the values in the enumeration <see cref="T:System.Drawing.ContentAlignment"/> that represents the type of alignment.</param>
+            <param name="destRect">Structure <see cref="T:System.Drawing.Rectangle"/> where it will be aligned.</param>
+            <returns>
+            Structure <see cref="T:System.Drawing.Rectangle"/> that represents the destination rectangle that contains the aligned element.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.SizeExtensions.AlignOutside(System.Drawing.Size,iTin.Core.Drawing.ComponentModel.OutsideAlignment,System.Drawing.Rectangle)">
+            <summary>
+            Align the <see cref="T:System.Drawing.Size"/> structure outside the target rectangle.
+            </summary>
+            <param name="size">Estructura <see cref="T:System.Drawing.Size"/> que se va alinear.</param>
+            <param name="alignment">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.OutsideAlignment"/> that represents the type of alignment.</param>
+            <param name="destRect">Structure <see cref="T:System.Drawing.Rectangle"/> where it will be aligned.</param>
+            <returns>
+            Structure <see cref="T:System.Drawing.Rectangle"/> that represents the destination rectangle that contains the aligned element.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.SmoothingModeExExtensions">
+            <summary>
+            Static class than contains extension methods for type <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx"/>.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.Drawing.SmoothingModeExExtensions.ToSmoothingMode(iTin.Core.Drawing.ComponentModel.SmoothingModeEx)">
+            <summary>
+            Equivalence between the types <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx" /> and <see cref="T:System.Drawing.Drawing2D.SmoothingMode"/>.
+            </summary>
+            <param name="mode">One of the values in the enumeration <see cref="T:iTin.Core.Drawing.ComponentModel.SmoothingModeEx"/> that represents the smoothing quality of the lines.</param>
+            <returns>
+            Equivalent representation quality.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Helpers.BitmapHelper">
+            <summary>
+            Static class than contains methods for manipulating objects of type <see cref="T:System.Drawing.Bitmap"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.BitmapHelper.CreateEmptyBitmap(System.Int32,System.Int32)">
+            <summary>
+            Creates a new <see cref="T:System.Drawing.Bitmap"/> from width and height specified.
+            </summary>
+            <param name="width">Width value</param>
+            <param name="height">Height value</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Bitmap"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.BitmapHelper.CreateEmptyBitmap(System.Single,System.Single)">
+            <summary>
+            Creates a new <see cref="T:System.Drawing.Bitmap"/> from width and height specified.
+            </summary>
+            <param name="width">Width value</param>
+            <param name="height">Height value</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Bitmap"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.BitmapHelper.CreateEmptyBitmap(System.Single,System.Single,System.Drawing.Color)">
+            <summary>
+            Creates a new <see cref="T:System.Drawing.Bitmap"/> from width, height and color specified.
+            </summary>
+            <param name="width">Width value</param>
+            <param name="height">Height value</param>
+            <param name="color">Bitmap color</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Bitmap"/>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.BitmapHelper.CreateEmptyBitmap(System.Int32,System.Int32,System.Drawing.Color)">
+            <summary>
+            Creates a new <see cref="T:System.Drawing.Bitmap"/> from width, height and color specified.
+            </summary>
+            <param name="width">Width value</param>
+            <param name="height">Height value</param>
+            <param name="color">Bitmap color</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Bitmap"/>.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Helpers.ColorHelper">
+            <summary> 
+            Static class that contains methods for manipulating structures of type <see cref="T:System.Drawing.Color"/>.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.GetColorFromString(System.String)">
+             <summary>
+             Returns a new <see cref="T:System.Drawing.Color"/> structure from its name, its hexdecimal encoding or from color space definition.
+             </summary>
+             <param name="value">A <see cref="T:System.String"/> that represents the color to convert.</param>
+             <returns>
+             Creates a new <see cref="T:System.Drawing.Color"/> structure from the specified string color.
+             </returns>
+             <remarks>
+             The <paramref name="value"/> parameter may contain:
+             <list type="table">
+               <item>
+                 <description>A color name, such as <see cref="P:System.Drawing.Color.Black"/>, <see cref="P:System.Drawing.Color.Red"/>.</description>
+               </item>
+               <item>
+                 <description>A hexadecimal RGB color encoding preceded by the character <b>#</b>, such as <b>#00FF00</b>, <b>#00FFFF</b>.</description>
+               </item>
+               <item>
+                 <description>
+                   A space color definition, for this has to precede the color string with this string <b>sc#</b>.
+                   <para>for example <b>sc# 0.15 0.15 0.15</b>, where the three color components (RGB) are set to 15% of its maximum value, producing a very light gray. 
+                   Each component has to be between <b>0.0</b> and <b>1.0</b>.</para>    
+                 </description>
+               </item>
+              </list>
+             </remarks>
+             <example>
+             The following code example, we obtain three different ways the same color, the color <see cref="P:System.Drawing.Color.Black"/>.
+             <code lang="cs">
+               using System;   
+               using System.Drawing;
+             
+               using iTin.Core.Helpers;
+             
+               class ColorTestClass   
+               {   
+                   static int Main()   
+                   {
+                        // From color name.
+                        Color fromColorName = ColorHelper.GetColorFromString("Black");
+            
+                        // From hexadecimal.
+                        Color fromHexString = ColorHelper.GetColorFromString("#000000");
+             
+                        // From space color.
+                        Color fromSpace = ColorHelper.GetColorFromString("sc: 0.0 0.0 0.0");
+                   }
+               }   
+              </code>
+             </example>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.MergeColors(System.Drawing.Color,System.Single,System.Drawing.Color,System.Single)">
+            <summary>
+            Combine two colors with relative percentages.
+            </summary>
+            <param name="color1">First color.</param>
+            <param name="percent1">Percentage of the first color.</param>
+            <param name="color2">Second color</param>
+            <param name="percent2">Percentage of the second color.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Color"/> structure as result of the combination.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.MergeColors(System.Drawing.Color,System.Single,System.Drawing.Color,System.Single,System.Drawing.Color,System.Single)">
+            <summary>
+            Combinar tres colores con porcentajes relativos.
+            </summary>
+            <param name="color1">First color.</param>
+            <param name="percent1">Percentage of the first color.</param>
+            <param name="color2">Second color</param>
+            <param name="percent2">Percentage of the second color.</param>
+            <param name="color3">Third color.</param>
+            <param name="percent3">Percentage of the third color.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Color"/> structure as result of the combination.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.ToHtmlColor(System.Drawing.Color)">
+            <summary>
+            Converts specified color to html color string.
+            </summary>
+            <param name="color"><see cref="T:System.Drawing.Color"/> structure to convert.</param>
+            <returns>
+            Returns a new <see cref="T:System.String"/> thats constains converted color.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.ToGray(System.Drawing.Color)">
+            <summary>
+            Converts specified color to grayscale.
+            </summary>
+            <param name="color"><see cref="T:System.Drawing.Color"/> structure to convert.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Color"/> structure converted to grayscale.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.ToHex(System.Drawing.Color)">
+            <summary>
+            Returns the hexadecimal encoding of a color.
+            </summary>
+            <param name="value"><see cref="T:System.Drawing.Color"/> structure to convert.</param>
+            <returns>
+            A hexadecimal <see cref="T:System.String" /> representing color.
+            </returns>
+            <example>
+            The following code example, we obtain hexadecimal code for white color without chararacter <b>#</b>. The result is <b>FFFFFF</b>.
+            <code lang="cs">
+              using System;   
+              using System.Drawing;
+            
+              using iTin.Core.Drawing.Helpers;
+            
+              class ColorTestClass   
+              {   
+                  static int Main()   
+                  {
+                       // From color name.
+                       string hexColorString = ColorHelper.GetColorFromString(Color.White);
+                       
+                       // Print result.
+                       Console.WriteLine("The hexadecimal representation of the color white is {0}", hexColorString); 
+                  }
+              }   
+             </code>
+            </example>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.ToTransparencyLevel(System.Drawing.Color,System.Int32)">
+            <summary>
+            Sets transparency level of specified color.
+            </summary>
+            <param name="color"><see cref="T:System.Drawing.Color"/> structure to convert.</param>
+            <param name="opacity">The level of transparency applied. The value must be between 0 and 255.</param>
+            <returns>
+            Returns a new <see cref="T:System.Drawing.Color"/> structure with specified transparency level.
+            </returns>
+            <remarks>
+            If the value is outside the limits, not makes no changes.
+            </remarks>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ColorHelper.FromSpaceColor(System.String)">
+            <summary>
+            A color obtained from the color percentage of each of its components.
+            </summary>
+            <param name="value">A <see cref="T:System.String"/> that represents the color to convert.</param>
+            <returns>
+            Creates a <see cref="T:System.Drawing.Color"/> structure from the specified string color.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Helpers.ImageHelper">
+            <summary> 
+            Static class than contains methods for manipulating images.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ImageHelper.Base64ToImage(System.String)">
+            <summary>
+            Converts a image in base64 codificaction into a <see cref="T:System.Drawing.Image"/>.
+            </summary>
+            <param name="base64String">image as base64.</param>
+            <returns>
+            A <see cref="T:System.Drawing.Image"/> object that contains the image.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ImageHelper.GetImageAttributesFromEffect(iTin.Core.Drawing.ComponentModel.EffectType)">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <param name="effect">Effect type.</param>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated. 
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ImageHelper.GetImageAttributesFromOpacityValueEffect(System.Single)">
+            <summary>
+            Gets the manipulation of the colors in an image to an effect.
+            </summary>
+            <param name="threshold">Effect type.</param>
+            <returns>
+            A <see cref="T:System.Drawing.Imaging.ImageAttributes"/> object that contains the information about how bitmap colors are manipulated. 
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Helpers.ImageHelper.GetImageMimeType(System.Byte[])">
+            <summary>
+            Gets the type <c>MIME</c> of the image
+            </summary>
+            <param name="imageData">The image data.</param>
+            <returns>
+            A <see cref="T:System.String"/> which contains <b>MIME</b> type.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Imaging">
+            <summary>
+            Class that constains methods for image color detection.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.Drawing.Imaging.DetectColor(System.Drawing.Bitmap,System.Drawing.Color,System.Int32)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Image"/> that contains the target color resalted in color white.
+            </summary>
+            <param name="image">Image reference</param>
+            <param name="color">Color reference</param>
+            <param name="tolerance">Target tolerance</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Image"/> instance that contains the target color resalted in color white.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.Drawing.Imaging.DetectColor(System.Drawing.Bitmap,System.Byte,System.Byte,System.Int32,System.Int32)">
+            <summary>
+            Returns a new <see cref="T:System.Drawing.Image"/> that contains the target color resalted in color white.
+            </summary>
+            <param name="image">Image reference</param>
+            <param name="R">Red color component</param>
+            <param name="G">Green color component</param>
+            <param name="B">Blue color component</param>
+            <param name="tolerance">Target tolerance</param>
+            <returns>
+            A new <see cref="T:System.Drawing.Image"/> instance that contains the target color resalted in color white.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.Drawing.Localization.Exceptions.Exception">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Drawing.Localization.Exceptions.Exception.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Drawing.Localization.Exceptions.Exception.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Drawing.Localization.Exceptions.Exception.INVALID_COLOR">
+            <summary>
+              Busca una cadena traducida similar a Invalid Color.
+            </summary>
+        </member>
+        <member name="P:iTin.Core.Drawing.Localization.Exceptions.Exception.UNKNOWN_ERROR">
+            <summary>
+              Busca una cadena traducida similar a Error desconocido.
+            </summary>
+        </member>
+    </members>
+</doc>

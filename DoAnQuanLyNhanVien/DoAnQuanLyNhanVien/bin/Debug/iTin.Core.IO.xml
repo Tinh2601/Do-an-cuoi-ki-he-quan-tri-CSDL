@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iTin.Core.IO</name>
+    </assembly>
+    <members>
+        <member name="T:iTin.Core.IO.FrameworkVersion">
+            <summary>
+            This class allows to obtain the .net framework folder for a specific version.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.FrameworkVersion.#ctor(System.Runtime.Versioning.TargetFrameworkAttribute)">
+            <summary>
+            Initialize a new instance of the <see cref="T:iTin.Core.IO.FrameworkVersion"/> class.
+            </summary>
+            <param name="frameworkAttribute">Framework compiled information</param>
+        </member>
+        <member name="P:iTin.Core.IO.FrameworkVersion.VersionName">
+            <summary>
+            Gets a framework version name.
+            </summary>
+            <value>
+            Version name.
+            </value>
+        </member>
+        <member name="P:iTin.Core.IO.FrameworkVersion.VersionNumber">
+            <summary>
+            Gets a framework version number.
+            </summary>
+            <value>
+            Version number.
+            </value>
+        </member>
+        <member name="M:iTin.Core.IO.FrameworkVersion.RuntimeOutputFolder">
+            <summary>
+            Returns runtime output folder for this version name and number.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that contains runtime output folder.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.FrameworkVersion.ToString">
+            <summary>
+            Returns a string that represents the current instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current object.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.PlatformInformation">
+            <summary>
+            This class provides simple properties for determining whether the current platform is Windows or Unix-based.
+            We intentionally do not use System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(...) because
+            it incorrectly reports 'true' for 'Windows' in desktop builds running on Unix-based platforms via Mono.
+            </summary>
+        </member>
+        <member name="T:iTin.Core.IO.ByteArrayExtensions">
+            <summary>
+            Static class than contains extension methods for objects <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.IO.ByteArrayExtensions.SaveToFile(System.Byte[],System.String)">
+            <summary>
+            Saves this byte array into file.
+            </summary>
+            <param name="data">Data to save.</param>
+            <param name="filename">Destination file.</param>
+            <returns>
+            A <see cref="T:iTin.Core.ComponentModel.IResult"/> object that contains the operation result
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.StreamExtensions">
+            <summary>
+            Static class than contains extension methods for objects of type <see cref="T:System.IO.Stream" />.
+            </summary> 
+        </member>
+        <member name="M:iTin.Core.IO.StreamExtensions.SaveToFile(System.IO.Stream,System.String,iTin.Core.ComponentModel.SaveOptions)">
+            <summary>
+            Saves this stream into a file with name specified by parameter <paramref name="fileName"/>.
+            You can indicate whether to automatically create the destination path if it does not exist. By default it will try to create the destination path.
+            The use of the <b>~</b> character is allowed to indicate relative paths, and you can also use <b>UNC</b> path.
+            </summary>
+            <param name="stream">Stream to save</param>
+            <param name="fileName">Destination file path. Absolute or relative (~) paths are allowed</param>
+            <param name="options">Output save options</param>
+            <returns>
+            A <see cref="T:iTin.Core.ComponentModel.IResult"/> object that contains the operation result
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.File">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:iTin.Core.IO.File.TempDirectoryFullName">
+            <summary>
+            Gets the <b>iTin</b> temporary directory.
+            </summary>
+            <value>
+            The <b>iTin</b> temporary directory.
+            </value>
+        </member>
+        <member name="M:iTin.Core.IO.File.CleanOrCreateTemporaryDirectory">
+            <summary>
+            Clean or create temporary work directory.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.File.CopyFiles(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Copies the files.
+            </summary>
+            <param name="sourceDirectory">Source directory.</param>
+            <param name="targetDirectory">Target directory.</param>
+            <param name="criterial">File criteria.</param>
+            <param name="overrides">if is <strong>true</strong> overrides destination file.</param>
+        </member>
+        <member name="M:iTin.Core.IO.File.DeleteTemporaryOutputFiles">
+            <summary>
+            Removes the directory and intermediates files.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.File.GetFiles(System.String,System.String,System.Int32)">
+            <summary>
+            Returns a collection that contains all files in a folder with the specified criterial.
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="criterial">The criterial.</param>
+            <param name="timeThreshold">The time threshold.</param>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerable{string}"/> that contains all files in a folder with the specified criterial.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.File.GetUniqueTempRandomFile">
+            <summary>
+            Returns a temp <see cref="T:System.Uri"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.Uri" /> file.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.File.IsValidFileName(System.String)">
+            <summary>
+            Determines whether <paramref name="name"/> is a valid name for a file.
+            </summary>
+            <param name="name">Filename to check.</param>
+            <returns>
+            <b>true</b> if <paramref name="name"/> is a valid file name; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.File.GetFilesWithoutExtension(System.String,System.String,System.Int32)">
+            <summary>
+            Returns a collection that contains all files without extension in a folder with the specified criterial.
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="criterial">The criterial.</param>
+            <param name="timeThreshold">The time threshold.</param>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerable{string}" /> that contains all files in a folder with the specified criterial without extension.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.File.IsUrl(System.String)">
+            <summary>
+            Gets a value indicating whether the specified <b><paramref name="path" /></b> is a web address.
+            </summary>
+            <param name="path">Path to check.</param>
+            <returns>
+            Returns <b>true</b> if is a web address; otherwise <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.File.ToUri(System.String)">
+            <summary>
+            This method makes a valid URL from a given filename.
+            </summary>
+            <param name="filename">A given filename</param>
+            <returns>
+            A valid <b>URL</b>.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.AssemblyHelper">
+            <summary>
+            Static class which contains methods for retrieve <see cref="T:System.Reflection.Assembly"/> information.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.AssemblyHelper.GetFullAssemblyUri">
+            <summary>
+            Returns <see cref="T:System.Uri"/> that contains full path to current assembly.
+            </summary>
+            <returns>
+            A <see cref="T:System.Uri"/> that contains full path to current assembly.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.NetFrameworkHelper">
+            <summary>
+            Static class which contains methods for retrieve <b>.NET Framework</b> information.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.NetFrameworkHelper.GetAssemblyFrameworkVersion(System.Reflection.Assembly)">
+            <summary>
+            Returns <see cref="T:iTin.Core.IO.FrameworkVersion"/> that contains full path to current assembly.
+            </summary>
+            <returns>
+            A <see cref="T:iTin.Core.IO.FrameworkVersion"/> that contains full path to current assembly.
+            </returns>
+        </member>
+        <member name="T:iTin.Core.IO.Path">
+            <summary>
+            Helper class for works for path's.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.IO.Path.DirectorySeparatorChar">
+            <summary>
+            Returns a <see cref="T:System.Char"/> that represents directory separator char. Returns <b>'/'</b> in <b>Unix</b> system or <b>'\'</b> in <b>Windows</b> system.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.IO.Path.AltDirectorySeparatorChar">
+            <summary>
+            Returns a <see cref="T:System.Char"/> that represents alternative directory separator char. Always returns <b>'/'</b> char.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.IO.Path.ParentRelativeDirectory">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents parent relative directory. Always returns <b>'..'</b> string.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.IO.Path.ThisDirectory">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this directory. Always returns <b>'.'</b> string.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.IO.Path.DirectorySeparatorStr">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents directory separator char. Returns <b>'/'</b> in <b>Unix</b> system or <b>'\'</b> in <b>Windows</b> system.
+            </summary>
+        </member>
+        <member name="F:iTin.Core.IO.Path.VolumeSeparatorChar">
+            <summary>
+            Returns a <see cref="T:System.Char"/> that represents volume separator char. Always returns <b>':'</b> char.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.IsDirectorySeparator(System.Char)">
+            <summary>
+            True if the character is the platform directory separator character or the alternate directory separator.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.IsAnyDirectorySeparator(System.Char)">
+            <summary>
+            True if the character is any recognized directory separator character.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.GetLocalPath(System.String)">
+            <summary>
+            Returns local path.
+            </summary>
+            <param name="uri"></param>
+            <returns>
+            Local path
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Path.EnsureTrailingSeparator(System.String)">
+            <summary>
+            Ensures a trailing directory separator character
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.TrimTrailingSeparators(System.String)">
+            <summary>
+            Removes trailing directory separator characters
+            </summary>
+            <remarks>
+            This will trim the root directory separator:
+            "C:\" maps to "C:", and "/" maps to ""
+            </remarks>
+        </member>
+        <member name="M:iTin.Core.IO.Path.IsAbsolute(System.String)">
+            <summary>
+            True if the path is an absolute path (rooted to drive or network share)
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.IsChildPath(System.String,System.String)">
+            <summary>
+            True if the child path is a child of the parent path.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.PathsEqual(System.String,System.String)">
+            <summary>
+            True if the two paths are the same.
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.IsDriveRootedAbsolutePath(System.String)">
+            <summary>
+            Returns true if given path is absolute and starts with a drive specification ("C:\").
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.PathsEqual(System.String,System.String,System.Int32)">
+            <summary>
+            True if the two paths are the same.  (but only up to the specified length)
+            </summary>
+        </member>
+        <member name="M:iTin.Core.IO.Path.PathResolver(System.String)">
+            <summary>
+            Gets a valid full path from a relative path, includes a paths on network drives
+            </summary>
+            <param name="path">Path</param>
+            <returns>
+            Valid full path.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Path.UncPathResolver(System.String)">
+            <summary>
+            Resolves a mapped network drive into valid <b>UNC</b> path.
+            </summary>
+            <param name="path"></param>
+            <returns>
+            <b>UNC</b> path.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Path.IsNetworkDrive(System.String)">
+            <summary>
+            Checks if the given path is a network drive.
+            </summary>
+            <param name="path">The path to check.</param>
+            <returns>
+            <b>true</b> if is a network drive; otherwise <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:iTin.Core.IO.Path.PathResolverImpl(System.String)">
+            <summary>
+            Gets a valid full path from a relative path.
+            </summary>
+            <param name="relativePath">Element to recover.</param>
+            <returns>
+            Valid full path.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The value specified is outside the range of valid values.</exception>
+        </member>
+    </members>
+</doc>

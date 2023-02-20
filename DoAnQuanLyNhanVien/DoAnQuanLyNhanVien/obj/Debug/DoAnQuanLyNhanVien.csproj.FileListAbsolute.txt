@@ -1,0 +1,541 @@
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.exe.config
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.exe
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.AssemblyReference.cache
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSNhanVien.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.FormMain.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.Properties.Resources.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.GenerateResource.cache
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.CoreCompileInputs.cache
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.exe
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.pdb
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.pdb
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSChucVu.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSDuAn.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmBangLuongNhanVien.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSPhongBan.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSChamCong.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\BouncyCastle.Crypto.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DotNetZip.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.xmlworker.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.xtra.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Drawing.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.Compression.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.Design.Styling.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Logging.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Registry.Windows.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Design.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Writer.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Registry.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.SystemEvents.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\netstandard.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Newtonsoft.Json.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.AppContext.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.CodeDom.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.Concurrent.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.NonGeneric.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.Specialized.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.TypeConverter.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Console.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.Common.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.Odbc.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.OleDb.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Contracts.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Debug.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.EventLog.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Process.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.StackTrace.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Tools.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.TraceSource.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Tracing.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Drawing.Common.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Drawing.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Dynamic.Runtime.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.Calendars.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.Extensions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Compression.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Compression.ZipFile.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.AccessControl.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.Watcher.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.IsolatedStorage.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.MemoryMappedFiles.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Packaging.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Pipes.AccessControl.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Pipes.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Ports.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Expressions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Parallel.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Queryable.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Http.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.NameResolution.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.NetworkInformation.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Ping.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Requests.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Security.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Sockets.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebHeaderCollection.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebSockets.Client.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebSockets.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ObjectModel.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.Extensions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.Reader.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.ResourceManager.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.Writer.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Extensions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Handles.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.InteropServices.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Numerics.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Formatters.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Json.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Xml.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.AccessControl.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Claims.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Algorithms.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Cng.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Csp.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Encoding.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Pkcs.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Xml.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Permissions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Principal.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Principal.Windows.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.SecureString.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Duplex.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Http.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.NetTcp.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Primitives.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Security.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Syndication.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceProcess.ServiceController.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.Extensions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.RegularExpressions.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.AccessControl.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Overlapped.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Tasks.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Tasks.Parallel.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Thread.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.ThreadPool.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Timer.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ValueTuple.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.ReaderWriter.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XDocument.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XmlDocument.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XmlSerializer.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XPath.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XPath.XDocument.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Drawing.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.Compression.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.Design.Styling.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Logging.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Design.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Writer.xml
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\en\iTin.Core.Drawing.resources.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\es\iTin.Core.Drawing.resources.dll
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmPhanCongDuAn.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmSearch.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmLogin.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmThongTinCaNhan.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmHopDongLD.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDuAnCaNhan.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmPasswordChange.resources
+E:\Second Year\Term II\DBMS\Project\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmQuanLyTaiKhoan.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.exe.config
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.exe
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.pdb
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\BouncyCastle.Crypto.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DotNetZip.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.xmlworker.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.xtra.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Drawing.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.Compression.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.Design.Styling.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Logging.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Registry.Windows.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Design.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Writer.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\netstandard.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Newtonsoft.Json.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.AppContext.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.CodeDom.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.Concurrent.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.NonGeneric.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.Specialized.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Console.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.Common.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.Odbc.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.OleDb.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Debug.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Process.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Tools.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Drawing.Common.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Drawing.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Dynamic.Runtime.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.Calendars.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.Extensions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Compression.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Packaging.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Pipes.AccessControl.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Pipes.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Ports.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Expressions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Parallel.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Queryable.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Http.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.NameResolution.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.NetworkInformation.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Ping.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Requests.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Security.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Sockets.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebSockets.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ObjectModel.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.Extensions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.Reader.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.ResourceManager.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.Writer.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Extensions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Handles.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.InteropServices.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Numerics.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.AccessControl.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Claims.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Permissions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Principal.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Principal.Windows.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.SecureString.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Duplex.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Http.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.NetTcp.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Security.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Syndication.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceProcess.ServiceController.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.RegularExpressions.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.AccessControl.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Overlapped.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Tasks.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Thread.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.ThreadPool.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Timer.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ValueTuple.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XDocument.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XmlDocument.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XPath.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Drawing.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.Compression.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.Design.Styling.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Logging.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Design.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Writer.xml
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\en\iTin.Core.Drawing.resources.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\es\iTin.Core.Drawing.resources.dll
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmBangLuongNhanVien.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSChamCong.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSChucVu.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSDuAn.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSNhanVien.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.FormMain.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSPhongBan.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDuAnCaNhan.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmHopDongLD.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmLogin.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmPasswordChange.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmPhanCongDuAn.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmSearch.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmThongTinCaNhan.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.Properties.Resources.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmQuanLyTaiKhoan.resources
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.GenerateResource.cache
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.CopyComplete
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.exe
+C:\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.pdb
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.exe.config
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.exe
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DoAnQuanLyNhanVien.pdb
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\BouncyCastle.Crypto.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\DotNetZip.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.xmlworker.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\itextsharp.xtra.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Drawing.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.Compression.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.Design.Styling.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Logging.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Registry.Windows.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Design.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Writer.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Registry.AccessControl.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\netstandard.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\Newtonsoft.Json.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.AppContext.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.CodeDom.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.Concurrent.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.NonGeneric.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Collections.Specialized.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Console.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.Common.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.Odbc.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.OleDb.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Debug.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Process.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Tools.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Drawing.Common.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Drawing.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Dynamic.Runtime.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.Calendars.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Globalization.Extensions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Compression.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Packaging.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Pipes.AccessControl.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Pipes.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.Ports.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Expressions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Parallel.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Linq.Queryable.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Http.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.NameResolution.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.NetworkInformation.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Ping.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Requests.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Security.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.Sockets.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Net.WebSockets.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ObjectModel.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.Extensions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Reflection.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.Reader.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.ResourceManager.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Resources.Writer.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Extensions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Handles.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.InteropServices.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Numerics.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.AccessControl.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Claims.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Permissions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Principal.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.Principal.Windows.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Security.SecureString.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Duplex.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Http.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.NetTcp.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Security.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceModel.Syndication.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ServiceProcess.ServiceController.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Text.RegularExpressions.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.AccessControl.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Overlapped.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Tasks.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Thread.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.ThreadPool.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Threading.Timer.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.ValueTuple.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XDocument.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XmlDocument.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XPath.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Drawing.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.IO.Compression.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Core.Models.Design.Styling.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Logging.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Design.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\iTin.Utilities.Pdf.Writer.xml
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\en\iTin.Core.Drawing.resources.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\bin\Debug\es\iTin.Core.Drawing.resources.dll
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmBangLuongNhanVien.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSChamCong.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSChucVu.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSDuAn.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSNhanVien.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.FormMain.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDSPhongBan.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmDuAnCaNhan.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmHopDongLD.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmLogin.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmPasswordChange.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmPhanCongDuAn.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmSearch.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmThongTinCaNhan.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.Properties.Resources.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.frmQuanLyTaiKhoan.resources
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.GenerateResource.cache
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.csproj.CopyComplete
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.exe
+C:\Thư viện\Thư viện\HK2-Nam2\Project CK Hệ quản trị CSDL\Cuối kỳ\DoAnQuanLyNhanVien\DoAnQuanLyNhanVien\obj\Debug\DoAnQuanLyNhanVien.pdb
